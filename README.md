@@ -1,24 +1,54 @@
-# README
+# ウマ娘全冠支援ツール
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+アプリ「ウマ娘 プリティーダービー」の全冠達成を目指す、全てのトレーナーのサポートをするツール。  
+主な機能  
+・ユーザー登録機能  
+・所持ウマ娘の登録  
+・ウマ娘ごとの獲得トロフィー状況登録および確認  
+ 
 
-Things you may want to cover:
 
-* Ruby version
+# URL※
+デプロイが完了次第記載予定。
 
-* System dependencies
 
-* Configuration
+# テスト用アカウント
+<!--ログイン機能等を実装した場合は、ログインに必要な情報を記載。またBasic認証等を設けている場合は、そのID/Passも記載すること。
+利用方法	このアプリケーションの利用方法を記載。説明が長い場合は、箇条書きでリスト化すること。-->
 
-* Database creation
+#  アプリケーションを作成した背景
 
-* Database initialization
+<!--このアプリケーションを通じて、どのような人の、どのような課題を解決しようとしているのかを記載。-->
+全冠を達成したいと考えているトレーナー（プレイヤー）が、もっと手軽に自分のウマ娘のトロフィー獲得状況を把握したり効率のいいローテーションを組んだりできないかと考えた。  
+2023年9月現在、ウマ娘の育成モードから個別のトロフィー獲得状況を一目で確認できるような機能やトロフィー獲得に特化したローテーションの自動提案機能が備わっておらず、逐一プレイヤー側で確認を取ったり出走レースを調整及び計算する必要がある。  
+一回当たりのプレイ時間がどうしても長くなりがちなゲームなので、少しでも効率よく全冠狙いができるようになればと思い開発に取り組んだ。
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# 洗い出した要件
+[要件定義をまとめたスプレッドシート](https://docs.google.com/spreadsheets/d/13SQGBESN54ATM9XBtp8xRCtVEFcw-L7sh4724jNfAJ0/edit#gid=982722306)
 
-* Deployment instructions
 
-* ...
+# 実装した機能についての画像やGIFおよびその説明※
+
+# 実装予定の機能
+・所持サポカの登録  
+・ウマ娘とトロフィー獲得状況、サポカ情報を基にしたおすすめローテーションの提案  
+・ローテーションに合わせたおすすめサポカの提案 
+
+# データベース設計
+[![ER図](https://i.gyazo.com/ae015c66d62d32e601617391a770efc8.png)](https://gyazo.com/ae015c66d62d32e601617391a770efc8)
+
+# 画面遷移図
+[![画面遷移図](https://i.gyazo.com/1b943cd961ce7025b315aab13bf2ac8d.png)](https://gyazo.com/1b943cd961ce7025b315aab13bf2ac8d)
+
+# 開発環境
+・バックエンド…Ruby on Rails  
+・エディタ…VS code  
+・開発環境中のデータベース…DBeaver
+
+# ローカルでの動作方法※
+<!--実装した機能について、それぞれどのような特徴があるのかを列挙する形で記載。画像はGyazoで、GIFはGyazoGIFで撮影すること。-->
+
+# 工夫したポイント※
+<!--制作背景・使用技術・開発方法・タスク管理など、企業へＰＲしたい事柄を記載。-->
