@@ -37,7 +37,31 @@
 ・ローテーションに合わせたおすすめサポカの提案 
 
 # データベース設計
+## ER図
 [![ER図](https://i.gyazo.com/ae015c66d62d32e601617391a770efc8.png)](https://gyazo.com/ae015c66d62d32e601617391a770efc8)
+
+## テーブル設計
+
+
+| User               | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+| traner_id          | number | null: false, unique: true |
+| comment            | string |                           |
+| twitter_id         | string | unique: true              |
+
+
+| Umamusume          | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| name               | string     |                                |
+| user               | references | null: false, foreign_key: true |
+
+
+| Trophy             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| 
 
 # 画面遷移図
 [![画面遷移図](https://i.gyazo.com/1b943cd961ce7025b315aab13bf2ac8d.png)](https://gyazo.com/1b943cd961ce7025b315aab13bf2ac8d)
