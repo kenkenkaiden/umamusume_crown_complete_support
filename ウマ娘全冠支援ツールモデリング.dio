@@ -10,12 +10,6 @@
                 <mxCell id="3" value="email&#10;password&#10;名前(nickname)&#10;トレーナーID&#10;コメント&#10;TwitterのID&#10;icon" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="2" vertex="1">
                     <mxGeometry y="30" width="170" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="ウマ娘所属情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="230" y="280" width="270" height="170" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" value="name&#10;おすすめローテーション&#10;（データベースというよりJavaScriptの領域？）&#10;おすすめサポカ&#10;（データベースというよりJavaScriptの領域？）" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="4" vertex="1">
-                    <mxGeometry y="30" width="270" height="140" as="geometry"/>
-                </mxCell>
                 <mxCell id="6" value="トロフィー取得状況" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
                     <mxGeometry x="370" y="70" width="160" height="140" as="geometry"/>
                 </mxCell>
@@ -32,68 +26,60 @@
                     <mxGeometry x="500" y="340" width="150" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="ウマ娘はいくつも&#10;トロフィーを持てる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
-                    <mxGeometry x="420" y="232.5" width="150" height="30" as="geometry"/>
+                    <mxGeometry x="330" y="250" width="150" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="3" target="5" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="14" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="4" target="7" edge="1">
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="3" target="27" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="440" y="130" as="sourcePoint"/>
+                        <mxPoint x="500" y="402.92452830188677" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.88;exitY=-0.002;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="26" target="7" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="365" y="280" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="16" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="2" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="ユーザーは何枚も&#10;サポカを持てる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
-                    <mxGeometry x="570" y="250" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="590" y="240" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="23" value="レース情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+                <mxCell id="23" value="レース情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
                     <mxGeometry x="60" y="40" width="160" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="名前&#10;グレード&#10;距離&#10;バ場&#10;開催時期&#10;開催場所" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="23">
+                <mxCell id="24" value="名前&#10;グレード&#10;距離&#10;バ場&#10;開催時期&#10;開催場所" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="23" vertex="1">
                     <mxGeometry y="30" width="160" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="7">
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="24" target="7" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="33" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="26" target="24">
+                <mxCell id="33" style="edgeStyle=none;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" parent="1" source="26" target="24" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="30" y="240"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="26" value="ウマ娘詳細情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-                    <mxGeometry x="10" y="312.5" width="190" height="85" as="geometry"/>
+                <mxCell id="26" value="ウマ娘情報" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="350" width="190" height="85" as="geometry"/>
                 </mxCell>
-                <mxCell id="27" value="バ場適性（芝、ダート）&#10;距離適性（短、マイル、中、長）&#10;目標レース" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="26">
+                <mxCell id="27" value="バ場適性（芝、ダート）&#10;距離適性（短、マイル、中、長）&#10;目標レース" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="26" vertex="1">
                     <mxGeometry y="30" width="190" height="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" value="ウマ娘詳細情報は&#10;一人のウマ娘につきパターンある" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="35" y="470" width="195" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="31" style="edgeStyle=none;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="27">
+                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="24" target="26" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
-                            <mxPoint x="150" y="460"/>
+                            <mxPoint x="180" y="250"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="32" style="edgeStyle=none;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="26">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="170" y="250"/>
-                        </Array>
-                    </mxGeometry>
+                <mxCell id="34" value="ウマ娘ごとに&#10;異なる目標レースを&#10;何個も持てる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="207.5" width="120" height="55" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="ウマ娘ごとに&#10;異なる目標レースを&#10;何個も持てる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="45" y="220" width="120" height="55" as="geometry"/>
+                <mxCell id="35" value="同じレースが&#10;複数のウマ娘の&#10;目標レースになる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="200" width="110" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="35" value="同じレースが&#10;複数のウマ娘の&#10;目標レースになる" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
-                    <mxGeometry x="180" y="200" width="110" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="36" value="1つのレースにつき&#10;トロフィーは1つ" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="36" value="1つのレースにつき&#10;トロフィーは1つ" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="240" y="70" width="120" height="40" as="geometry"/>
                 </mxCell>
             </root>
