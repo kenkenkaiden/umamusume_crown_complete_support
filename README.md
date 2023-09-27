@@ -38,12 +38,12 @@
 
 # データベース設計
 ## ER図
-[![ER図](https://i.gyazo.com/ae015c66d62d32e601617391a770efc8.png)](https://gyazo.com/ae015c66d62d32e601617391a770efc8)
-
+[![ER図](https://i.gyazo.com/eb1432ba665efbdec91472d26ed46b31.png)](https://gyazo.com/eb1432ba665efbdec91472d26ed46b31)
 ## テーブル設計
-
-
-| User               | Type   | Options                   |
+実際にテーブル作成がされていないものもあります。  
+2023年9月27日現在の構想となります。
+### usersテーブル
+| Column             | Type   | Options                   |
 | ------------------ | ------ | ------------------------- |
 | nickname           | string | null: false               |
 | email              | string | null: false, unique: true |
@@ -51,17 +51,82 @@
 | traner_id          | number | null: false, unique: true |
 | comment            | string |                           |
 | twitter_id         | string | unique: true              |
+#### Association
+#### トレーナーは1人で何人もウマ娘を担当できる（所持できる）  
+has_many :umamusumes
+#### トレーナーは1人で何枚もサポートカードを所持できる  
+has_many :support_cards
 
 
-| Umamusume          | Type       | Options                        |
+### umamusumesテーブル
+| Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| name               | string     |                                |
+| name               | string     | null: false                    |
+| turf               | string     | null: false                    |
+| dirt               | string     | null: false                    |
+| sprint             | string     | null: false                    |
+| mile               | string     | null: false                    |
+| intermediate       | string     | null: false                    |
+| long               | string     | null: false                    |
 | user               | references | null: false, foreign_key: true |
+#### Association
+#### 複数のウマ娘が同じトレーナーに所属している
+belongs_to :user
+#### ウマ娘はいくつもの目標レースを持っている
+has_many :target_races  
+has_many :races, through: :target_races  
+#### ウマ娘は1人につき、いくつもの勝利済みレースを記録できる
+has_many :record_of_wins  
+has_many :races, through: :record_of_wins
 
 
-| Trophy             | Type       | Options                        |
+### racesテーブル
+| Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| 
+| name               | string     | null: false                    |
+| grade              | string     | null: false                    |
+| surface            | string     | null: false                    |
+| distance           | string     | null: false                    |
+| meter              | integer    | null: false                    |
+| date_1             | string     | null: false                    |
+| date_2             | string     | null: false                    |
+| course             | integer    | null: false                    |
+#### Association
+#### 一つのレースが何人ものウマ娘の目標レースとなる場合があるし、どのウマ娘の目標レースでもない場合もある
+has_many :target_races  
+has_many :umamusumes, through: :target_races  
+#### 各レースごとにウマ娘の勝利記録を何人分も記録できる
+has_many :record_of_wins  
+has_many :umamusumes, through: :record_of_wins  
+
+### support_cardsテーブル
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| name               | string     | null: false                    |
+| user               | references | null: false, foreign_key: true |
+#### Association
+#### 複数のサポカが同じトレーナーに保管されている
+belongs_to :user
+
+
+### target_racesテーブル（ウマ娘の目標レースを管理する中間テーブル）
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| umamusume          | references | null: false, foreign_key: true |
+| race               | references | null: false, foreign_key: true |
+#### Association
+belongs_to :umamusume  
+belongs_to :race  
+
+### record_of_winsテーブル（ウマ娘の勝利済みレースを管理する中間テーブル）
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| umamusume          | references | null: false, foreign_key: true |
+| race               | references | null: false, foreign_key: true |
+#### Association
+belongs_to :umamusume  
+belongs_to :race  
+
 
 # 画面遷移図
 [![画面遷移図](https://i.gyazo.com/1b943cd961ce7025b315aab13bf2ac8d.png)](https://gyazo.com/1b943cd961ce7025b315aab13bf2ac8d)
