@@ -73,6 +73,7 @@ has_many :support_cards
 #### 複数のウマ娘が同じトレーナーに所属している
 belongs_to :user
 #### ウマ娘はいくつもの目標レースを持っている
+#### ウマ娘は何らかの対応するレースがないと登録ができないわけではないので、親と子の関係ではない
 has_many :target_races  
 has_many :races, through: :target_races  
 #### ウマ娘は1人につき、いくつもの勝利済みレースを記録できる
@@ -93,6 +94,7 @@ has_many :races, through: :record_of_wins
 | course             | integer    | null: false                    |
 #### Association
 #### 一つのレースが何人ものウマ娘の目標レースとなる場合があるし、どのウマ娘の目標レースでもない場合もある
+#### レースはウマ娘がいないと存在できないわけではないので、親と子の関係ではない
 has_many :target_races  
 has_many :umamusumes, through: :target_races  
 #### 各レースごとにウマ娘の勝利記録を何人分も記録できる
