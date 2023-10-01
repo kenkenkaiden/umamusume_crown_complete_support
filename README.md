@@ -2,7 +2,7 @@
 
 # アプリケーション概要
 アプリ「ウマ娘 プリティーダービー」の全冠達成を目指す、全てのトレーナーのサポートをするツール。  
-主な機能  
+主な機能（目下実装中）  
 ・ユーザー登録機能  
 ・所持ウマ娘の登録  
 ・ウマ娘ごとの獲得トロフィー状況登録および確認  
@@ -43,14 +43,14 @@
 実際にテーブル作成がされていないものもあります。  
 2023年9月27日現在の構想となります。
 ### usersテーブル
-| Column             | Type   | Options                   |
-| ------------------ | ------ | ------------------------- |
-| nickname           | string | null: false               |
-| email              | string | null: false, unique: true |
-| encrypted_password | string | null: false               |
-| traner_id          | number | null: false, unique: true |
-| comment            | string |                           |
-| twitter_id         | string | unique: true              |
+| Column             | Type    | Options                   |
+| ------------------ | ------- | ------------------------- |
+| nickname           | string  | null: false               |
+| email              | string  | null: false, unique: true |
+| encrypted_password | string  | null: false               |
+| traner_id          | integer | null: false, unique: true |
+| comment            | string  |                           |
+| twitter_id         | string  | unique: true              |
 #### Association
 #### トレーナーは1人で何人もウマ娘を担当できる（所持できる）  
 has_many :umamusumes
