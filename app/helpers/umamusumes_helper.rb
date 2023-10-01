@@ -1,0 +1,2 @@
+module UmamusumesHelper
+end

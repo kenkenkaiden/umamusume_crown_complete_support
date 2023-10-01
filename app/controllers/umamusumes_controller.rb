@@ -1,0 +1,2 @@
+class UmamusumesController < ApplicationController
+end
