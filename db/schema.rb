@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2023_10_01_135901) do
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "nickname", default: "", null: false
-    t.integer "traner_id", default: 0, null: false
+    t.string "traner_id", default: "0", null: false
     t.string "comment"
     t.string "twitter_id"
     t.string "reset_password_token"

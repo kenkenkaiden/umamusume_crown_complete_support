@@ -48,7 +48,7 @@
 | nickname           | string  | null: false               |
 | email              | string  | null: false, unique: true |
 | encrypted_password | string  | null: false               |
-| traner_id          | integer | null: false, unique: true |
+| traner_id          | string  | null: false, unique: true |
 | comment            | string  |                           |
 | twitter_id         | string  | unique: true              |
 #### Association
