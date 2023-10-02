@@ -19,16 +19,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <%= link_to "マイページ", "#", class: "nav-link active", "aria-current" => "page" %>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#">サポートカード管理</a>
             </li>
-            <li class="nav-item">
-              <%= link_to "新規登録", new_user_registration_path, class: "nav-link" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "ログイン", user_session_path, class: "nav-link" %>
+            <% if user_signed_in? %>
+              <li class="nav-item">
+                <%#= link_to "トレーナー名刺", "#", class: "nav-link active", "aria-current" => "page" #%>
+                <%= button_to "トレーナー名刺", "#", method: :delete, "aria-current" => "page", class: "btn btn-primary", role: "button" %>
+              </li>
+              <%# ログアウトできない問題がある場所 %>              
+              <li class="nav-item">
+                <%= button_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-dark", role: "button" %>
+              </li>
+              <%# ログアウトできない問題がある場所 %>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to "新規登録", new_user_registration_path, class: "nav-link" %>
+              </li>
+              <li class="nav-item">
+                <%= link_to "ログイン", user_session_path, class: "nav-link" %>
+              </li>
+            <% end %>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Dropdown

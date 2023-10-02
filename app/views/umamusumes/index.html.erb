@@ -1,9 +1,26 @@
 <div class="contents row">
-  <% @umamusumes.each do |umamusume| %>
-      <p><%= umamusume.name %></p>
-      <span class="name">
-        <%= umamusume.turf %>
-      </span>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <%= link_to(image_tag("エアシャカール.png", class: "card-img-top", alt: "..."), root_path) %>
+          <div class="card-body">
+            <h5 class="card-title">登録済みウマ娘</h5>
+            <p class="card-text">ここにトロフィー獲得状況を表示させたい</p>
+            <a href="#" class="btn btn-primary">詳細</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
     </div>
-  <% end %>
+  </div>
+
+
+
 </div>
