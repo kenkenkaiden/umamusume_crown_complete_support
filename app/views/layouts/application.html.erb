@@ -18,19 +18,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">サポートカード管理</a>
-            </li>
             <% if user_signed_in? %>
+            <li class="nav-item">
+              <%= button_to "ウマ娘登録・解除ページ", new_umamusume_path, method: :get, class: "btn btn-primary", role: "button" %>
+            </li>
+            <li class="nav-item">
+              <%= button_to "サポカ管理", "#", class: "btn btn-info", role: "button" %>
+            </li>
               <li class="nav-item">
                 <%#= link_to "トレーナー名刺", "#", class: "nav-link active", "aria-current" => "page" #%>
-                <%= button_to "トレーナー名刺", "#", method: :delete, "aria-current" => "page", class: "btn btn-primary", role: "button" %>
-              </li>
-              <%# ログアウトできない問題がある場所 %>              
+                <%= button_to "トレーナー名刺", "#", method: :delete, "aria-current" => "page", class: "btn btn-info", role: "button" %>
+              </li>          
               <li class="nav-item">
                 <%= button_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-dark", role: "button" %>
               </li>
-              <%# ログアウトできない問題がある場所 %>
             <% else %>
               <li class="nav-item">
                 <%= link_to "新規登録", new_user_registration_path, class: "nav-link" %>
