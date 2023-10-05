@@ -9,6 +9,16 @@
 </div>
 
 <div class="card" style="width: 18rem;">
+  <%= link_to(image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "..."), root_path) %>
+  <div class="card-body">
+    <h5 class="card-title">登録済みウマ娘の名前</h5>
+    <a href="#" class="btn btn-primary">
+      <%= button_to "この娘を解除する", umamusume_path(@umamusume.id), method: :delete, class: "btn btn-primary", role: "button" %>
+    </a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
   <%= link_to(image_tag("エアシャカール.png", class: "card-img-top", alt: "..."), root_path) %>
   <div class="card-body">
     <h5 class="card-title">登録済みのウマ娘</h5>

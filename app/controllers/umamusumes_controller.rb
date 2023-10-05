@@ -17,6 +17,10 @@ class UmamusumesController < ApplicationController
     end
   end
 
+  def destroy
+    umamusume = Umamusume.find(params[:id])
+    umamusume.destroy
+  end
 
   private
 
