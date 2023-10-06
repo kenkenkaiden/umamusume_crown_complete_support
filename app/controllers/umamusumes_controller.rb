@@ -1,6 +1,6 @@
 class UmamusumesController < ApplicationController
   def index
-    @umamusumes = Umamusume.all
+    @umamusumes = current_user.umamusumes
   end
 
   def new
@@ -18,8 +18,9 @@ class UmamusumesController < ApplicationController
   end
 
   def destroy
-    umamusume = Umamusume.find(params[:id])
-    umamusume.destroy
+    @umamusume = Umamusume.find(params[:id])
+    @umamusume.destroy
+    render :index
   end
 
   private

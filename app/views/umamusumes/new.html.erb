@@ -1,16 +1,34 @@
-<% @umamusumes.each do |umamusume| %>
-  <div class="card" style="width: 18rem;">
-    <%= image_tag("ウマ娘の画像", class: "card-img-top", alt: "...") %>
-    <div class="card-body">
-      <h5 class="card-title"><%= umamusume.name %></h5>
-      <% if current_user.umamusume_registered?(umamusume) %>
-        <%= button_to "この娘を解除する", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
-      <% else %>
-        <%= button_to "この娘を登録する", umamusumes_path(umamusume_id: umamusume.id), method: :post, class: "btn btn-primary", role: "button" %>
-      <% end %>
-    </div>
+
+<div class="card" style="width: 18rem;">
+  <%= image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "...") %>
+  <div class="card-body">
+    <h5 class="card-title"><%= "スペシャルウィーク" %></h5>
+    <%# if current_user.umamusume_registered?(umamusume) %>
+      <%#= button_to "この娘を解除する", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
+    <%# else %>
+      <%#= button_to "この娘を登録する", umamusumes_path(umamusume_id: umamusume.id), method: :post, class: "btn btn-primary", role: "button" %>
+      <%= button_to "この娘を登録する", umamusumes_path(
+        umamusume: { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", 
+        intermediate: "A", long: "A" }), method: :post, class: "btn btn-primary", role: "button" %>
+      <%# end %>
   </div>
-<% end %>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <%= image_tag("サイレンススズカ（公式1）.png", class: "card-img-top", alt: "...") %>
+  <div class="card-body">
+    <h5 class="card-title"><%= "サイレンススズカ" %></h5>
+    <%# if current_user.umamusume_registered?(umamusume) %>
+      <%#= button_to "この娘を解除する", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
+    <%# else %>
+      <%#= button_to "この娘を登録する", umamusumes_path(umamusume_id: umamusume.id), method: :post, class: "btn btn-primary", role: "button" %>
+    <%# end %>
+    <%= button_to "この娘を登録する", umamusumes_path(
+      umamusume: { name: "サイレンススズカ", turf: "A", dirt: "G", sprint: "D", mile: "A", 
+      intermediate: "A", long: "E" }), method: :post, class: "btn btn-primary", role: "button" %>
+  </div>
+</div>
+
 
 <div class="card" style="width: 18rem;">
   <%= link_to(image_tag("エアシャカール.png", class: "card-img-top", alt: "..."), root_path) %>

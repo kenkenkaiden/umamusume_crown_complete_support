@@ -22,18 +22,21 @@
           </div>
         </div>
       </div>
-      
+
       <% if Umamusume.exists? %>
+      <%= @umamusumes.each do |umamusume| %>
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <%= link_to(image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "..."), root_path) %>
+          <%= link_to(image_tag("スペシャルウィーク（公式SNSアイコン）.png", class: "card-img-top", alt: "..."), root_path) %>
           <div class="card-body">
-            <h5 class="card-title">登録済みウマ娘</h5>
+            <h5 class="card-title"><%= umamusume.name %></h5>
             <p class="card-text">ここにトロフィー獲得状況を表示させたい</p>
             <a href="#" class="btn btn-primary">詳細</a>
+            <%= button_to "登録解除", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
           </div>
         </div>
       </div>
+      <% end %>
       <% end %>
     </div>
   </div>
