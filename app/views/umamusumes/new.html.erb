@@ -1,22 +1,16 @@
-<div class="card" style="width: 18rem;">
-  <%= link_to(image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "..."), root_path) %>
-  <div class="card-body">
-    <h5 class="card-title">未登録ウマ娘の名前</h5>
-    <a href="#" class="btn btn-primary">
-      <%= button_to "この娘を登録する", umamusumes_path(umamusume: { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" }), method: :post, class: "btn btn-primary", role: "button" %>
-    </a>
+<% @umamusumes.each do |umamusume| %>
+  <div class="card" style="width: 18rem;">
+    <%= image_tag("ウマ娘の画像", class: "card-img-top", alt: "...") %>
+    <div class="card-body">
+      <h5 class="card-title"><%= umamusume.name %></h5>
+      <% if current_user.umamusume_registered?(umamusume) %>
+        <%= button_to "この娘を解除する", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
+      <% else %>
+        <%= button_to "この娘を登録する", umamusumes_path(umamusume_id: umamusume.id), method: :post, class: "btn btn-primary", role: "button" %>
+      <% end %>
+    </div>
   </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <%= link_to(image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "..."), root_path) %>
-  <div class="card-body">
-    <h5 class="card-title">登録済みウマ娘の名前</h5>
-    <a href="#" class="btn btn-primary">
-      <%= button_to "この娘を解除する", umamusume_path(@umamusume.id), method: :delete, class: "btn btn-primary", role: "button" %>
-    </a>
-  </div>
-</div>
+<% end %>
 
 <div class="card" style="width: 18rem;">
   <%= link_to(image_tag("エアシャカール.png", class: "card-img-top", alt: "..."), root_path) %>
