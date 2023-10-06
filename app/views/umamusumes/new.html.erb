@@ -1,21 +1,23 @@
 
 <div class="card" style="width: 18rem;">
-  <%= image_tag("スペシャルウィーク（公式1）.png", class: "card-img-top", alt: "...") %>
+  <%= image_tag("スペシャルウィーク（公式SNSアイコン）.png", class: "card-img-top", alt: "...") %>
   <div class="card-body">
     <h5 class="card-title"><%= "スペシャルウィーク" %></h5>
-    <%# if current_user.umamusume_registered?(umamusume) %>
-      <%#= button_to "この娘を解除する", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
-    <%# else %>
-      <%#= button_to "この娘を登録する", umamusumes_path(umamusume_id: umamusume.id), method: :post, class: "btn btn-primary", role: "button" %>
-      <%= button_to "この娘を登録する", umamusumes_path(
-        umamusume: { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", 
-        intermediate: "A", long: "A" }), method: :post, class: "btn btn-primary", role: "button" %>
-      <%# end %>
+      <% if current_user.umamusumes.exists?(name: "スペシャルウィーク") %>
+      <% else %>
+        <%= button_to "この娘を登録する", umamusumes_path(
+          umamusume: { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", 
+          intermediate: "A", long: "A"}), method: :post, class: "btn btn-primary", role: "button" %>
+      <% end %>
   </div>
 </div>
 
+
+
+
+
 <div class="card" style="width: 18rem;">
-  <%= image_tag("サイレンススズカ（公式1）.png", class: "card-img-top", alt: "...") %>
+  <%= image_tag("サイレンススズカ（公式SNSアイコン）.png", class: "card-img-top", alt: "...") %>
   <div class="card-body">
     <h5 class="card-title"><%= "サイレンススズカ" %></h5>
     <%# if current_user.umamusume_registered?(umamusume) %>
@@ -26,15 +28,5 @@
     <%= button_to "この娘を登録する", umamusumes_path(
       umamusume: { name: "サイレンススズカ", turf: "A", dirt: "G", sprint: "D", mile: "A", 
       intermediate: "A", long: "E" }), method: :post, class: "btn btn-primary", role: "button" %>
-  </div>
-</div>
-
-
-<div class="card" style="width: 18rem;">
-  <%= link_to(image_tag("エアシャカール.png", class: "card-img-top", alt: "..."), root_path) %>
-  <div class="card-body">
-    <h5 class="card-title">登録済みのウマ娘</h5>
-    <p class="card-text">ここにトロフィー獲得状況を表示させたい</p>
-    <a href="#" class="btn btn-primary">詳細</a>
   </div>
 </div>

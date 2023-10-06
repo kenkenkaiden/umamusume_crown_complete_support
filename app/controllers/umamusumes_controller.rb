@@ -19,8 +19,10 @@ class UmamusumesController < ApplicationController
 
   def destroy
     @umamusume = Umamusume.find(params[:id])
-    @umamusume.destroy
-    render :index
+    if @umamusume.destroy
+      @umamusumes = current_user.umamusumes
+      render :index
+    end
   end
 
   private
