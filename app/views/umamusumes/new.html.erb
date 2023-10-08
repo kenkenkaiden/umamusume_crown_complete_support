@@ -3,7 +3,9 @@
   <%= image_tag("スペシャルウィーク（公式SNSアイコン）.png", class: "card-img-top", alt: "...") %>
   <div class="card-body">
     <h5 class="card-title"><%= "スペシャルウィーク" %></h5>
-      <% if current_user.umamusumes.exists?(name: "スペシャルウィーク") %>
+      <% umamusume = current_user.umamusumes.find_by(name: "スペシャルウィーク") %>
+      <% if umamusume %>
+        <%= button_to "登録解除", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
       <% else %>
         <%= button_to "この娘を登録する", umamusumes_path(
           umamusume: { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", 

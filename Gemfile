@@ -64,3 +64,8 @@ gem 'devise'
 # Railsで画像を投稿する機能を実装する時に使うgem2つ
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
+
+# Render使用時のデータベースであるPostgreSQLを使用できるようにするためのgem
+group :production do
+  gem 'pg'
+end
