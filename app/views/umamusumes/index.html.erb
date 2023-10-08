@@ -2,20 +2,15 @@
 
   <div class="container text-center">
     <div class="row">
-      <div class="col">
-      </div>
-      <div class="col">
 
-      </div>
-
+      <%# 登録済みのウマ娘を表示させるためのコード%>
       <% if Umamusume.exists? %>
         <%= @umamusumes.each do |umamusume| %>
           <%= render partial: "umamusume", locals: { umamusume: umamusume } %>
         <% end %>
       <% end %>
+
     </div>
   </div>
-
-
 
 </div>
