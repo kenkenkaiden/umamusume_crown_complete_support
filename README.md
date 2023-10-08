@@ -131,7 +131,7 @@ belongs_to :race
 
 
 # 画面遷移図
-[![画面遷移図](https://i.gyazo.com/10ab07587d8f1bced33771a69bbad473.png)](https://gyazo.com/10ab07587d8f1bced33771a69bbad473)
+[![画面遷移図](https://i.gyazo.com/e866b5072b601848205d4069b7f628dc.png)](https://gyazo.com/e866b5072b601848205d4069b7f628dc)
 # 開発環境
 ・バックエンド…Ruby on Rails  
 ・エディタ…VS code  
