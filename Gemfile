@@ -69,3 +69,7 @@ gem 'image_processing', '~> 1.2'
 group :production do
   gem 'pg'
 end
+
+
+# データベースに保存するほどでもない静的データをあらかじめ用意しておくためのgem
+gem 'active_hash'
