@@ -3,20 +3,27 @@ class UmamusumesController < ApplicationController
     @umamusumes = current_user.umamusumes
   end
 
+
   def new
-    umamusume_list
+    set_umamusume_list
   end
+
 
   def create
     @umamusume = Umamusume.new(umamusume_params)
     if @umamusume.valid?
       @umamusume.save
-      umamusume_list
+      set_umamusume_list
       render :new
     else
       render :new
     end
   end
+
+  def show
+    @umamusume = Umamusume.find(params[:id])
+  end
+
 
   def destroy
     @umamusume = Umamusume.find(params[:id])
@@ -26,13 +33,16 @@ class UmamusumesController < ApplicationController
     end
   end
 
+
   private
+
 
   def umamusume_params
     params.require(:umamusume).permit(:name, :turf, :dirt, :sprint, :mile, :intermediate, :long).merge(user_id: current_user.id)
   end
 
-  def umamusume_list
+
+  def set_umamusume_list
     @umamusume_list = [
       { name: "スペシャルウィーク", image: "スペシャルウィーク（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
       { name: "サイレンススズカ", image: "サイレンススズカ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "D", mile: "A", intermediate: "A", long: "E" },

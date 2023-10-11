@@ -5,7 +5,7 @@
       <div class="card-body">
         <h5 class="card-title"><%= umamusume.name %></h5>
         <p class="card-text">ここにトロフィー獲得状況を表示させたい</p>
-        <a href="#" class="btn btn-primary">詳細</a>
+        <%= button_to "詳細", umamusume_path(umamusume.id), method: :get, class: "btn btn-primary", role: "button" %>
         <%= button_to "登録解除", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
       </div>
     </div>
