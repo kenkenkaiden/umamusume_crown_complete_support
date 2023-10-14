@@ -38,7 +38,7 @@
 
 # データベース設計
 ## ER図
-[![ER図](https://i.gyazo.com/eb1432ba665efbdec91472d26ed46b31.png)](https://gyazo.com/eb1432ba665efbdec91472d26ed46b31)
+[![ER図](https://i.gyazo.com/05c892135f53674e3ca9e4bce6aea6a6.png)](https://gyazo.com/05c892135f53674e3ca9e4bce6aea6a6)
 ## テーブル設計
 実際にテーブル作成がされていないものもあります。  
 2023年9月27日現在の構想となります。
@@ -84,14 +84,14 @@ has_many :races, through: :record_of_wins
 ### racesテーブル
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| name               | string     | null: false                    |
+| name               | string     | null: false, unique: true      |
 | grade              | string     | null: false                    |
 | surface            | string     | null: false                    |
-| distance           | string     | null: false                    |
-| meter              | integer    | null: false                    |
+| classification     | string     | null: false                    |
+| distance           | integer    | null: false                    |
 | date_1             | string     | null: false                    |
-| date_2             | string     | null: false                    |
-| course             | integer    | null: false                    |
+| date_2             | string     |                                |
+| course             | string     | null: false                    |
 #### Association
 #### 一つのレースが何人ものウマ娘の目標レースとなる場合があるし、どのウマ娘の目標レースでもない場合もある
 #### レースはウマ娘がいないと存在できないわけではないので、親と子の関係ではない
