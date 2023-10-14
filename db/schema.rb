@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_10_14_130737) do
+ActiveRecord::Schema.define(version: 2023_10_14_205204) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -46,6 +46,24 @@ ActiveRecord::Schema.define(version: 2023_10_14_130737) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "record_of_wins", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "umamusume_id", null: false
+    t.bigint "race_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["race_id"], name: "index_record_of_wins_on_race_id"
+    t.index ["umamusume_id"], name: "index_record_of_wins_on_umamusume_id"
+  end
+
+  create_table "target_races", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "umamusume_id", null: false
+    t.bigint "race_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["race_id"], name: "index_target_races_on_race_id"
+    t.index ["umamusume_id"], name: "index_target_races_on_umamusume_id"
+  end
+
   create_table "umamusumes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
     t.string "turf", null: false
@@ -77,5 +95,9 @@ ActiveRecord::Schema.define(version: 2023_10_14_130737) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "record_of_wins", "races"
+  add_foreign_key "record_of_wins", "umamusumes"
+  add_foreign_key "target_races", "races"
+  add_foreign_key "target_races", "umamusumes"
   add_foreign_key "umamusumes", "users"
 end
