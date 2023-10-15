@@ -1,6 +1,10 @@
 class UmamusumesController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
+
   def index
-    @umamusumes = current_user.umamusumes
+    if user_signed_in?
+      @umamusumes = current_user.umamusumes
+    end
   end
 
 
