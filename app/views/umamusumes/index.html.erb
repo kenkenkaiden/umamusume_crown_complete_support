@@ -6,7 +6,7 @@
       <% if user_signed_in? %>
         <% if Umamusume.exists? %>
           <%# 登録済みのウマ娘を表示させるためのコード%>
-          <%= @umamusumes.each do |umamusume| %>
+          <% @umamusumes.each do |umamusume| %>
             <%= render partial: "umamusume", locals: { umamusume: umamusume } %>
           <% end %>
 
