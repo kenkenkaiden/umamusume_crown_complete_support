@@ -89,8 +89,9 @@ has_many :races, through: :record_of_wins
 | surface            | string     | null: false                    |
 | classification     | string     | null: false                    |
 | distance           | integer    | null: false                    |
-| date_1             | string     | null: false                    |
-| date_2             | string     |                                |
+| date_junior        | string     |                                |
+| date_classic       | string     |                                |
+| date_senior        | string     |                                |
 | course             | string     | null: false                    |
 #### Association
 #### 一つのレースが何人ものウマ娘の目標レースとなる場合があるし、どのウマ娘の目標レースでもない場合もある

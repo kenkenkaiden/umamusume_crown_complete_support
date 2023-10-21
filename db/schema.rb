@@ -39,8 +39,9 @@ ActiveRecord::Schema.define(version: 2023_10_14_205204) do
     t.string "surface", null: false
     t.string "classification", null: false
     t.integer "disctance", null: false
-    t.string "date_1", null: false
-    t.string "date_2"
+    t.string "date_junior"
+    t.string "date_classic"
+    t.string "date_senior"
     t.string "course", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
