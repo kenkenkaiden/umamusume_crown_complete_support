@@ -1,6 +1,2 @@
-name,grade,surface,classification,distance,date_1,date_2,course
-フェブラリーステークス,G1,ダート,マイル,1600,2月後半,,東京
-日本ダービー,G1,芝,中距離,2400,5月後半,,東京
-凱旋門賞,G1,芝,中距離,2400,10月前半,10月前半,ロンシャン
-有馬記念,G1,芝,長距離,2500,12月後半,12月後半,中山
-Arima,G1,turf,long,2500,December,,Nakayama
+name,grade,surface,classification,distance,date_junior,date_classic,date_senior,course
+譛蛾ｦｬ,G1,turf,long,2500,,December,,Nakayama

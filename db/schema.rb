@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2023_10_14_205204) do
     t.string "grade", null: false
     t.string "surface", null: false
     t.string "classification", null: false
-    t.integer "disctance", null: false
+    t.integer "distance", null: false
     t.string "date_junior"
     t.string "date_classic"
     t.string "date_senior"
