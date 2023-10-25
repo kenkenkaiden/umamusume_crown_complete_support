@@ -2,7 +2,7 @@ require 'csv'
 
 csv_file_path = 'db/csv/race_info.csv'
 
-CSV.foreach(csv_file_path, headers: true, encoding: 'bom|uft-8') do |row|
+CSV.foreach(csv_file_path, headers: true, encoding: 'UTF-8') do |row|
   Race.create!(
     name: row['name'],
     grade: row['grade'],
