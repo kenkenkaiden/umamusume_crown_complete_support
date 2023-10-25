@@ -5,7 +5,7 @@ class CreateRaces < ActiveRecord::Migration[6.0]
       t.string   :grade,              null: false               # グレード
       t.string   :surface,            null: false               # バ場
       t.string   :classification,     null: false               # 距離区分
-      t.integer  :distance,          null: false                # 距離
+      t.integer  :distance,           null: false               # 距離
       t.string   :date_junior                                   # 開催日ジュニア期
       t.string   :date_classic                                  # 開催日クラシック期
       t.string   :date_senior                                   # 開催日シニア期
