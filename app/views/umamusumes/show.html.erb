@@ -1,76 +1,20 @@
 <div class="container text-center">
   <div class="row">
+    <% @races.each do |race| %>
     <div class="col-md-4">
       <div class="card text-center">
-        <%= link_to(image_tag("フェブラリーステークス.png", alt: "..."), root_path) %>
+        <%= link_to(image_tag("#{race.name}.png", class: "card-img-top", alt: "..."), root_path) %>
         <div class="card-body">
-          <h5 class="card-title">フェブラリーステークス</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
+          <h5 class="card-title"><%= race.name %></h5>
+          <p class="card-text">hoge</p>
+          <%= button_to "詳細", umamusume_path(race.id), method: :get, class: "btn btn-primary", role: "button" %>
+          <%= button_to "登録解除", umamusume_path(race), method: :delete, class: "btn btn-primary", role: "button" %>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
-      <div class="card text-center">
-        <%= link_to(image_tag("高松宮記念.png", alt: "..."), root_path) %>
-        <div class="card-body">
-          <h5 class="card-title">高松宮記念</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card text-center">
-        <%= link_to(image_tag("大阪杯.png", alt: "..."), root_path) %>
-        <div class="card-body">
-          <h5 class="card-title">大阪杯</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
-        </div>
-      </div>
-    </div>
-  </div>
+    <% end %>
+  </div> <%#>rowここまで<%>
 
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card text-center">
-        <%= link_to(image_tag("フェブラリーステークス.png", alt: "..."), root_path) %>
-        <div class="card-body">
-          <h5 class="card-title">フェブラリーステークス</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card text-center">
-        <%= link_to(image_tag("高松宮記念.png", alt: "..."), root_path) %>
-        <div class="card-body">
-          <h5 class="card-title">高松宮記念</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card text-center">
-        <%= link_to(image_tag("大阪杯.png", alt: "..."), root_path) %>
-        <div class="card-body">
-          <h5 class="card-title">大阪杯</h5>
-          <p class="card-text"></p>
-          <%= button_to "詳細", "#", method: :get, class: "btn btn-primary", role: "button" %>
-          <%= button_to "登録解除", "#", method: :delete, class: "btn btn-primary", role: "button" %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <%#= image_tag("#{@umamusume.name}（公式SNSアイコン）.png", class: "card-img-top", alt: "...") %>
