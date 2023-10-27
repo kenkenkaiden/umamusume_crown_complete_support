@@ -10,6 +10,7 @@ class CreateRaces < ActiveRecord::Migration[6.0]
       t.string   :date_classic                                  # 開催日クラシック期
       t.string   :date_senior                                   # 開催日シニア期
       t.string   :course,             null: false               # レース場
+      t.integer  :default_order,      null: false, unique: true # 初期の並び順（公式アプリ内を元に）
       t.timestamps
     end
   end

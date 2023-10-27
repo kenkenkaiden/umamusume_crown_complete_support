@@ -93,6 +93,7 @@ has_many :races, through: :record_of_wins
 | date_classic       | string     |                                |
 | date_senior        | string     |                                |
 | course             | string     | null: false                    |
+| default_order      | integer    | null: false, unique: true      |
 #### Association
 #### 一つのレースが何人ものウマ娘の目標レースとなる場合があるし、どのウマ娘の目標レースでもない場合もある
 #### レースはウマ娘がいないと存在できないわけではないので、親と子の関係ではない

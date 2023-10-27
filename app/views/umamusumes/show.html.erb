@@ -3,7 +3,7 @@
     <% @races.each do |race| %>
       <div class="col-md-4 my-custom-col">
         <div class="card text-center mb-4">
-          <%= link_to(image_tag("#{race.name}.png", class: "card-img-top", alt: "...", style: "max-width: 20%; height: auto;"), root_path) %>
+          <%= link_to(image_tag("#{race.name}.png", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) %>
           <div class="card-body">
             <h6 class="card-title"><%= race.name %></h5>
             <p class="card-text"></p>
