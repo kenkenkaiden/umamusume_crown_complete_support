@@ -26,7 +26,7 @@ class UmamusumesController < ApplicationController
 
   def show
     @umamusume = Umamusume.find(params[:id])
-    @races = Race.all
+    @races = Race.order("default_order ASC")
   end
 
 
