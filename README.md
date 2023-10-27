@@ -38,7 +38,7 @@
 
 # データベース設計
 ## ER図
-[![ER図](https://i.gyazo.com/248e57e2ab5e657233c52ae46a7b57e1.png)](https://gyazo.com/248e57e2ab5e657233c52ae46a7b57e1)
+[![ER図](https://i.gyazo.com/960d199f0ced8948b93f589b9ad9bd87.png)](https://gyazo.com/960d199f0ced8948b93f589b9ad9bd87)
 ## テーブル設計
 実際にテーブル作成がされていないものもあります。  
 2023年9月27日現在の構想となります。
