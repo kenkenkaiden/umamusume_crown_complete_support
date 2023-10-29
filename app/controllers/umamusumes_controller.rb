@@ -59,6 +59,12 @@ class UmamusumesController < ApplicationController
       { name: "ウオッカ", image: "ウオッカ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "F" },
       { name: "ダイワスカーレット", image: "ダイワスカーレット（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "B" },
       { name: "タイキシャトル", image: "タイキシャトル（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "A", mile: "A", intermediate: "E", long: "G" },
+      { name: "グラスワンダー", image: "グラスワンダー（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "G", mile: "A", intermediate: "B", long: "A" },
+      { name: "ヒシアマゾン", image: "ヒシアマゾン（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "D", mile: "A", intermediate: "A", long: "B" },
+      { name: "メジロマックイーン", image: "メジロマックイーン（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "G", mile: "F", intermediate: "A", long: "A" },
+      { name: "エルコンドルパサー", image: "エルコンドルパサー（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "F", mile: "A", intermediate: "A", long: "B" },
+      { name: "テイエムオペラオー", image: "テイエムオペラオー（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "G", mile: "E", intermediate: "A", long: "A" },
+      { name: "ナリタブライアン", image: "ナリタブライアン（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "B", intermediate: "A", long: "A" },
     ]
   end
 end
