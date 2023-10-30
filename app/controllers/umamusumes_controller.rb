@@ -49,26 +49,39 @@ class UmamusumesController < ApplicationController
 
   def set_umamusume_list
     @umamusume_list = [
-      { name: "スペシャルウィーク", image: "スペシャルウィーク（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
-      { name: "サイレンススズカ", image: "サイレンススズカ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "D", mile: "A", intermediate: "A", long: "E" },
-      { name: "トウカイテイオー", image: "トウカイテイオー（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "E", intermediate: "A", long: "B" },
-      { name: "マルゼンスキー", image: "マルゼンスキー（公式SNSアイコン）.png", turf: "A", dirt: "D", sprint: "B", mile: "A", intermediate: "B", long: "C" },
-      { name: "フジキセキ", image: "フジキセキ（公式SNSアイコン）.png", turf: "A", dirt: "F", sprint: "B", mile: "A", intermediate: "B", long: "E" },
-      { name: "オグリキャップ", image: "オグリキャップ（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "E", mile: "A", intermediate: "A", long: "B" },
-      { name: "ゴールドシップ", image: "ゴールドシップ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
-      { name: "ウオッカ", image: "ウオッカ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "F" },
-      { name: "ダイワスカーレット", image: "ダイワスカーレット（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "B" },
-      { name: "タイキシャトル", image: "タイキシャトル（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "A", mile: "A", intermediate: "E", long: "G" },
-      { name: "グラスワンダー", image: "グラスワンダー（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "G", mile: "A", intermediate: "B", long: "A" },
-      { name: "ヒシアマゾン", image: "ヒシアマゾン（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "D", mile: "A", intermediate: "A", long: "B" },
-      { name: "メジロマックイーン", image: "メジロマックイーン（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "G", mile: "F", intermediate: "A", long: "A" },
-      { name: "エルコンドルパサー", image: "エルコンドルパサー（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "F", mile: "A", intermediate: "A", long: "B" },
-      { name: "テイエムオペラオー", image: "テイエムオペラオー（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "G", mile: "E", intermediate: "A", long: "A" },
-      { name: "ナリタブライアン", image: "ナリタブライアン（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "B", intermediate: "A", long: "A" },
-      { name: "シンボリルドルフ", image: "シンボリルドルフ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
-      { name: "エアグルーヴ", image: "エアグルーヴ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "C", mile: "B", intermediate: "A", long: "E" },
-      { name: "アグネスデジタル", image: "アグネスデジタル（公式SNSアイコン）.png", turf: "A", dirt: "A", sprint: "F", mile: "A", intermediate: "A", long: "G" },
-      { name: "セイウンスカイ", image: "セイウンスカイ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
+      { name: "サイレンススズカ", turf: "A", dirt: "G", sprint: "D", mile: "A", intermediate: "A", long: "E" },
+      { name: "トウカイテイオー", turf: "A", dirt: "G", sprint: "F", mile: "E", intermediate: "A", long: "B" },
+      { name: "マルゼンスキー", turf: "A", dirt: "D", sprint: "B", mile: "A", intermediate: "B", long: "C" },
+      { name: "フジキセキ", turf: "A", dirt: "F", sprint: "B", mile: "A", intermediate: "B", long: "E" },
+      { name: "オグリキャップ", turf: "A", dirt: "B", sprint: "E", mile: "A", intermediate: "A", long: "B" },
+      { name: "ゴールドシップ", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      { name: "ウオッカ", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "F" },
+      { name: "ダイワスカーレット", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "B" },
+      { name: "タイキシャトル", turf: "A", dirt: "B", sprint: "A", mile: "A", intermediate: "E", long: "G" },
+      { name: "グラスワンダー", turf: "A", dirt: "G", sprint: "G", mile: "A", intermediate: "B", long: "A" },
+      { name: "ヒシアマゾン", turf: "A", dirt: "E", sprint: "D", mile: "A", intermediate: "A", long: "B" },
+      { name: "メジロマックイーン", turf: "A", dirt: "E", sprint: "G", mile: "F", intermediate: "A", long: "A" },
+      { name: "エルコンドルパサー", turf: "A", dirt: "B", sprint: "F", mile: "A", intermediate: "A", long: "B" },
+      { name: "テイエムオペラオー", turf: "A", dirt: "E", sprint: "G", mile: "E", intermediate: "A", long: "A" },
+      { name: "ナリタブライアン", turf: "A", dirt: "G", sprint: "F", mile: "B", intermediate: "A", long: "A" },
+      { name: "シンボリルドルフ", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
+      { name: "エアグルーヴ", turf: "A", dirt: "G", sprint: "C", mile: "B", intermediate: "A", long: "E" },
+      { name: "アグネスデジタル", turf: "A", dirt: "A", sprint: "F", mile: "A", intermediate: "A", long: "G" },
+      { name: "セイウンスカイ", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      { name: "タマモクロス", turf: "A", dirt: "F", sprint: "G", mile: "E", intermediate: "A", long: "A" },
+      { name: "ファインモーション", turf: "A", dirt: "G", sprint: "F", mile: "A", intermediate: "A", long: "C" },
+      { name: "ビワハヤヒデ", turf: "A", dirt: "F", sprint: "F", mile: "C", intermediate: "A", long: "A" },
+      { name: "マヤノトップガン", turf: "A", dirt: "E", sprint: "D", mile: "D", intermediate: "A", long: "A" },
+      { name: "マンハッタンカフェ", turf: "A", dirt: "G", sprint: "G", mile: "F", intermediate: "B", long: "A" },
+      { name: "ミホノブルボン", turf: "A", dirt: "G", sprint: "C", mile: "B", intermediate: "A", long: "B" },
+      { name: "メジロライアン", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "B" },
+      { name: "ヒシアケボノ", turf: "A", dirt: "F", sprint: "A", mile: "B", intermediate: "F", long: "G" },
     ]
+
+    @umamusume_list.each do |umamusume|
+      umamusume[:image] = "#{umamusume[:name]}（公式SNSアイコン）.png"
+    end
   end
+
 end
