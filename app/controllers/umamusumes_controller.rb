@@ -65,6 +65,10 @@ class UmamusumesController < ApplicationController
       { name: "エルコンドルパサー", image: "エルコンドルパサー（公式SNSアイコン）.png", turf: "A", dirt: "B", sprint: "F", mile: "A", intermediate: "A", long: "B" },
       { name: "テイエムオペラオー", image: "テイエムオペラオー（公式SNSアイコン）.png", turf: "A", dirt: "E", sprint: "G", mile: "E", intermediate: "A", long: "A" },
       { name: "ナリタブライアン", image: "ナリタブライアン（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "F", mile: "B", intermediate: "A", long: "A" },
+      { name: "シンボリルドルフ", image: "シンボリルドルフ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
+      { name: "エアグルーヴ", image: "エアグルーヴ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "C", mile: "B", intermediate: "A", long: "E" },
+      { name: "アグネスデジタル", image: "アグネスデジタル（公式SNSアイコン）.png", turf: "A", dirt: "A", sprint: "F", mile: "A", intermediate: "A", long: "G" },
+      { name: "セイウンスカイ", image: "セイウンスカイ（公式SNSアイコン）.png", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
     ]
   end
 end
