@@ -1,17 +1,19 @@
 <div class="contents row">
   <div class="container text-center">
-    <div class="row">
+    <div class="row row-cols-5 g-0">
       <% @umamusume_list.each do |umamusume| %>
-      <% unless current_user.umamusumes.exists?(name: umamusume[:name]) %>
-        <div class="card" style="width: 13rem;">
-          <%= image_tag(umamusume[:image], class: "card-img-top", alt: "...") %>
-          <div class="card-body">
-            <h5 class="card-title"><%= umamusume[:name] %></h5>
-            <%= button_to "この娘を登録する", umamusumes_path(umamusume: umamusume), method: :post, class: "btn btn-primary", role: "button" %>
+        <% unless current_user.umamusumes.exists?(name: umamusume[:name]) %>
+          <div class="col">
+            <div class="card">
+              <%= image_tag(umamusume[:image], class: "card-img-top", alt: "...") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= umamusume[:name] %></h5>
+                <%= button_to "この娘を登録する", umamusumes_path(umamusume: umamusume), method: :post, class: "btn btn-primary", role: "button" %>
+              </div>
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
-    <% end %>
     </div>
   </div>
 </div>

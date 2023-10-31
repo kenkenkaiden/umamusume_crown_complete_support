@@ -53,7 +53,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'bootstrap', '~> 4.3.1'
+gem "bootstrap", "~> 5.2"
 gem 'jquery-rails'
 
 # コードに"binding.pry"と書き込んでparamsなどを確認できるgem
@@ -76,3 +76,6 @@ gem 'active_hash'
 
 # csvファイルを読み込むためのgem
 gem 'roo'
+
+
+gem 'dartsass-sprockets'
