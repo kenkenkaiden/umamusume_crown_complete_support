@@ -15,7 +15,9 @@
             <div class="card" style="width: 15rem;">
               <%= link_to(image_tag("Umamusume index（ユーザーがログインしていない時に表示させる）.jpg", class: "card-img-top", alt: "..."), root_path) %>
               <div class="card-body">
-                <h5 class="card-title">ウマ娘登録をしてみましょう！</h5>
+                <h5 class="card-title">登録済みのウマ娘がまだいないようです。
+                <p>登録をしてみましょう！</p>
+                </h5>
                 <%= button_to "ウマ娘登録ページへ", new_umamusume_path, method: :get, class: "btn btn-primary", role: "button" %>
               </div>
             </div>

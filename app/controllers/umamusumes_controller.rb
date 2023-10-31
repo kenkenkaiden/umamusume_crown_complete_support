@@ -77,6 +77,9 @@ class UmamusumesController < ApplicationController
       { name: "ミホノブルボン", turf: "A", dirt: "G", sprint: "C", mile: "B", intermediate: "A", long: "B" },
       { name: "メジロライアン", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "B" },
       { name: "ヒシアケボノ", turf: "A", dirt: "F", sprint: "A", mile: "B", intermediate: "F", long: "G" },
+      { name: "ユキノビジン", turf: "A", dirt: "B", sprint: "D", mile: "A", intermediate: "A", long: "E" },
+      { name: "ライスシャワー", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
+      { name: "アイネスフウジン", turf: "A", dirt: "G", sprint: "G", mile: "A", intermediate: "A", long: "C" },
     ]
 
     @umamusume_list.each do |umamusume|
