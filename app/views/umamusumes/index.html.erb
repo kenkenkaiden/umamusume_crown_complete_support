@@ -13,7 +13,7 @@
         <% else %>
           <div class="col">
             <div class="card" style="width: 15rem;">
-              <%= link_to(image_tag("Umamusume index（ユーザーがログインしていない時に表示させる）.jpg", class: "card-img-top", alt: "..."), root_path) %>
+              <%= link_to(image_tag("管制室.png", class: "card-img-top", alt: "..."), root_path) %>
               <div class="card-body">
                 <h5 class="card-title">登録済みのウマ娘がまだいないようです。
                 <p>登録をしてみましょう！</p>
@@ -27,7 +27,7 @@
       <% else %>
         <div class="col">
           <div class="card" style="width: 15rem;">
-            <%= link_to(image_tag("Umamusume index（ユーザーがログインしていない時に表示させる）.jpg", class: "card-img-top", alt: "..."), root_path) %>
+            <%= link_to(image_tag("管制室.png", class: "card-img-top", alt: "..."), root_path) %>
             <div class="card-body">
               <h5 class="card-title">ユーザー登録をしてみましょう！</h5>
               <%= button_to "ユーザー新規登録", new_user_registration_path, method: :get, class: "btn btn-primary", role: "button" %>
