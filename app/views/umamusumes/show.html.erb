@@ -1,4 +1,5 @@
 <div class="container text-center">
+  <div><h1><%= @umamusume.name %>のトロフィー獲得状況</h1></div>
   <div class="row">
     <% @races.each do |race| %>
       <div class="col-md-4 my-custom-col">
@@ -19,8 +20,3 @@
     <% end %>
   </div>
 </div>
-
-
-
-<%#= image_tag("#{@umamusume.name}（公式SNSアイコン）.png", class: "card-img-top", alt: "...") %>
-<%#= @umamusume.name %>
