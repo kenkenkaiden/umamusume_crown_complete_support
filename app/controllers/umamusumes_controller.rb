@@ -23,6 +23,10 @@ class UmamusumesController < ApplicationController
   def show
     @umamusume = Umamusume.find(params[:id])
     @races = Race.order("default_order ASC")
+    grade_counts = Race.group(:grade).count
+    @g1_count = grade_counts["G1"].to_i
+    @g2_count = grade_counts["G2"].to_i
+    @g3_count = grade_counts["G3"].to_i
   end
 
   def destroy

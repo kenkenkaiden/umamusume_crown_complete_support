@@ -1,19 +1,28 @@
 <div class="container text-center">
   <div><h1><%= @umamusume.name %>のトロフィー獲得状況</h1></div>
+  <ul class="list-group list-group-horizontal justify-content-center">
+    <li class="list-group-item">G1<p>/<%= @g1_count %></p></li>
+    <li class="list-group-item">G2<p>/<%= @g2_count %></p></li>
+    <li class="list-group-item">G3<p>/<%= @g3_count %></p></li>
+    <li class="list-group-item">EX</li>
+  </ul>
   <div class="row">
     <% @races.each do |race| %>
       <div class="col-md-4 my-custom-col">
         <div class="card text-center mb-4">
-          <% if race.surface == "芝" %> <%# surface(バ場)の値が芝かどうかで表示させるトロフィーの種類を変える部分ここから %>
-            <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) %>
+          <% if race.surface == "芝" %>
+            <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) if @umamusume.won_race?(race) %>
           <% else %>
-            <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) %>
-          <% end %> <%# surface(バ場)の値が芝かどうかで表示させるトロフィーの種類を変える記述 ここまで%>
+            <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) if @umamusume.won_race?(race) %>
+          <% end %>
           <div class="card-body">
             <h6 class="card-title"><%= race.name %></h5>
             <p class="card-text"></p>
-            <%= button_to "詳細", umamusume_path(race.id), method: :get, class: "btn btn-primary", role: "button" %>
-            <%#= button_to "登録解除", umamusume_path(race), method: :delete, class: "btn btn-primary", role: "button" %>
+            <% if @umamusume.won_race?(race) %>
+              <%= button_to "解除", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+            <% else %>
+              <%= button_to "登録", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-primary", role: "button" %>
+            <% end %>
           </div>
         </div>
       </div>
