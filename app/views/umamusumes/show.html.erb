@@ -1,9 +1,10 @@
 <div class="container text-center">
   <div><h1><%= @umamusume.name %>のトロフィー獲得状況</h1></div>
+  <div><h3>総獲得数:<%= @umamusume.won_race_count %></h1></div>
   <ul class="list-group list-group-horizontal justify-content-center">
-    <li class="list-group-item">G1<p>/<%= @g1_count %></p></li>
-    <li class="list-group-item">G2<p>/<%= @g2_count %></p></li>
-    <li class="list-group-item">G3<p>/<%= @g3_count %></p></li>
+    <li class="list-group-item">G1<p><%= @umamusume.won_g1_count %>/<%= @g1_count %></p></li>
+    <li class="list-group-item">G2<p><%= @umamusume.won_g2_count %>/<%= @g2_count %></p></li>
+    <li class="list-group-item">G3<p><%= @umamusume.won_g3_count %>/<%= @g3_count %></p></li>
     <li class="list-group-item">EX</li>
   </ul>
   <div class="row">
