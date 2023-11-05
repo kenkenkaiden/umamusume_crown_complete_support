@@ -25,4 +25,16 @@ class Umamusume < ApplicationRecord
   def won_g3_count
     races.where(grade: "G3").count
   end
+
+  def g1_count
+    Race.where(grade: 'G1').count
+  end
+
+  def g2_count
+    Race.where(grade: 'G2').count
+  end
+
+  def g3_count
+    Race.where(grade: 'G3').count
+  end
 end

@@ -26,10 +26,9 @@ class UmamusumesController < ApplicationController
 
     ## 実装済みのG1、G2、G3レースの総数をテーブルから取得
     grade_counts = Race.group(:grade).count
-    @g1_count = grade_counts["G1"].to_i
-    @g2_count = grade_counts["G2"].to_i
-    @g3_count = grade_counts["G3"].to_i
-
+    @g1_count = @umamusume.g1_count
+    @g2_count = @umamusume.g2_count
+    @g3_count = @umamusume.g3_count
 
   end
 
