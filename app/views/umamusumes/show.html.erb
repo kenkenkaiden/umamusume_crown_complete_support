@@ -1,6 +1,6 @@
 <div class="container text-center">
   <div><h1><%= @umamusume.name %>のトロフィー獲得状況</h1></div>
-  <div><h3>総獲得数:<%= @umamusume.won_race_count %></h1></div>
+  <div><h3>総獲得数:<%= @umamusume.won_race_count %></h3></div>
   <ul class="list-group list-group-horizontal justify-content-center">
     <li class="list-group-item">G1<p><%= @umamusume.won_g1_count %>/<%= @g1_count %></p></li>
     <li class="list-group-item">G2<p><%= @umamusume.won_g2_count %>/<%= @g2_count %></p></li>
@@ -9,21 +9,127 @@
   </ul>
 
   <div class="row">
-    <div class="col-md-12 my-custom-col">ジュニア級</div>
+    <div class="col-md-12 my-custom-col"><h3>ジュニア級</h3></div>
     <div class="row">
       <% (1..12).each do |month| %>
         <div class="col-md-3">
           <div class="border border-secondary">
-            <% races = Race.where("date_junior LIKE ?", "%#{month}月%").order(:date_junior) %>
+            <% races = Race.where("date_junior = ?", "#{month}月前半").order(:date_junior) %>
             <% if races.any? %>
               <% races.each do |race| %>
-                <p><%= race.name %></p>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
               <% end %>
             <% else %>
               <p>（レースなし）</p>
             <% end %>
           </div>
           <p><%= "#{month}月前半" %></p>
+        </div>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_junior = ?", "#{month}月後半").order(:date_junior) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月後半" %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 my-custom-col"><h3>クラシック級</h3></div>
+    <div class="row">
+      <% (1..12).each do |month| %>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_classic = ?", "#{month}月前半").order(:date_classic) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月前半" %></p>
+        </div>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_classic = ?", "#{month}月後半").order(:date_classic) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月後半" %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12 my-custom-col"><h3>シニア級</h3></div>
+    <div class="row">
+      <% (1..12).each do |month| %>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_senior= ?", "#{month}月前半").order(:date_senior) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月前半" %></p>
+        </div>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_senior = ?", "#{month}月後半").order(:date_senior) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% if @umamusume.won_race?(race) %>
+                  <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+                <% else %>
+                  <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+                <% end %>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月後半" %></p>
         </div>
       <% end %>
     </div>
@@ -34,9 +140,9 @@
       <div class="col-md-4 my-custom-col">
         <div class="card text-center mb-4">
           <% if race.surface == "芝" %>
-            <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) if @umamusume.won_race?(race) %>
+            <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
           <% else %>
-            <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), root_path) if @umamusume.won_race?(race) %>
+            <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
           <% end %>
           <div class="card-body">
             <h6 class="card-title"><%= race.name %></h5>
