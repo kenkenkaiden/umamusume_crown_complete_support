@@ -7,6 +7,28 @@
     <li class="list-group-item">G3<p><%= @umamusume.won_g3_count %>/<%= @g3_count %></p></li>
     <li class="list-group-item">EX</li>
   </ul>
+
+  <div class="row">
+    <div class="col-md-12 my-custom-col">ジュニア級</div>
+    <div class="row">
+      <% (1..12).each do |month| %>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_junior LIKE ?", "%#{month}月%").order(:date_junior) %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <p><%= race.name %></p>
+              <% end %>
+            <% else %>
+              <p>（レースなし）</p>
+            <% end %>
+          </div>
+          <p><%= "#{month}月前半" %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  
   <div class="row">
     <% @races.each do |race| %>
       <div class="col-md-4 my-custom-col">

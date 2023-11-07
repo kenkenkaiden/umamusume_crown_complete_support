@@ -37,4 +37,5 @@ class Umamusume < ApplicationRecord
   def g3_count
     Race.where(grade: 'G3').count
   end
+  
 end

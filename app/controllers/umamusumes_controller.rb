@@ -23,6 +23,7 @@ class UmamusumesController < ApplicationController
   def show
     @umamusume = Umamusume.find(params[:id])
     @races = Race.order("default_order ASC")
+    @races_by_month = Race.where.not(date_junior: nil).group_by { |race| race.date_junior.split('月')[0] }
 
     ## 実装済みのG1、G2、G3レースの総数をテーブルから取得
     grade_counts = Race.group(:grade).count
