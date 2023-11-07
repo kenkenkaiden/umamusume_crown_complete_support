@@ -4,7 +4,7 @@
       <%#= link_to(image_tag("#{umamusume.name}（公式SNSアイコン）.png", class: "card-img-top", alt: "..."), root_path) %>
       <div class="card-body">
         <h5 class="card-title"><%= umamusume.name %></h5>
-        <p class="card-text">ここにトロフィー獲得状況を表示させたい</p>
+        <p class="card-text">獲得状況:<%= umamusume.won_race_count %>/<%= Race.count %></p>
         <%= button_to "詳細", umamusume_path(umamusume.id), method: :get, class: "btn btn-primary", role: "button" %>
         <%= button_to "登録解除", umamusume_path(umamusume), method: :delete, class: "btn btn-primary", role: "button" %>
       </div>

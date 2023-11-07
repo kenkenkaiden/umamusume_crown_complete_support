@@ -2,40 +2,22 @@
   <div class="col-md-12 my-custom-col"><h3><%= title %></h3></div>
   <div class="row">
     <% (1..12).each do |month| %>
-      <div class="col-md-3">
-        <div class="border border-secondary">
-          <% races = Race.where("date_#{period} = ?", "#{month}月前半").order("date_#{period}") %>
-          <% if races.any? %>
-            <% races.each do |race| %>
-              <% if @umamusume.won_race?(race) %>
-                <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
-              <% else %>
-                <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
+      <% ["前半", "後半"].each do |half| %>
+        <div class="col-md-3">
+          <div class="border border-secondary">
+            <% races = Race.where("date_#{period} = ?", "#{month}月#{half}").order("date_#{period}") %>
+            <% if races.any? %>
+              <% races.each do |race| %>
+                <% btn_label = @umamusume.won_race?(race) ? "☆#{race.name}" : "・#{race.name}" %>
+                <%= button_to btn_label, @umamusume.won_race?(race) ? umamusume_race_path(@umamusume, race) : umamusume_races_path(@umamusume, race_id: race.id), method: @umamusume.won_race?(race) ? :delete : :post, class: @umamusume.won_race?(race) ? "btn btn-primary" : "btn btn-dark", role: "button" %>
               <% end %>
+            <% else %>
+              <p>（レースなし）</p>
             <% end %>
-          <% else %>
-            <p>（レースなし）</p>
-          <% end %>
+          </div>
+          <p><%= "#{month}月#{half}" %></p>
         </div>
-        <p><%= "#{month}月前半" %></p>
-      </div>
-      <div class="col-md-3">
-        <div class="border border-secondary">
-          <% races = Race.where("date_#{period} = ?", "#{month}月後半").order("date_#{period}") %>
-          <% if races.any? %>
-            <% races.each do |race| %>
-              <% if @umamusume.won_race?(race) %>
-                <%= button_to "☆#{race.name}", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
-              <% else %>
-                <%= button_to "・#{race.name}", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-dark", role: "button" %>
-              <% end %>
-            <% end %>
-          <% else %>
-            <p>（レースなし）</p>
-          <% end %>
-        </div>
-        <p><%= "#{month}月後半" %></p>
-      </div>
+      <% end %>
     <% end %>
   </div>
 </div>
