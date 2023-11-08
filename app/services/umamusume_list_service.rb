@@ -1,7 +1,7 @@
 class UmamusumeListService
   def self.get_list
     [
-      { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
+      { name: "スペシャルウィーク", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A", target"#{}"},
       { name: "サイレンススズカ", turf: "A", dirt: "G", sprint: "D", mile: "A", intermediate: "A", long: "E" },
       { name: "トウカイテイオー", turf: "A", dirt: "G", sprint: "F", mile: "E", intermediate: "A", long: "B" },
       { name: "マルゼンスキー", turf: "A", dirt: "D", sprint: "B", mile: "A", intermediate: "B", long: "C" },
