@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 2023_10_31_223101) do
   create_table "target_races", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "umamusume_id", null: false
     t.bigint "race_id", null: false
+    t.string "race_period", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["race_id"], name: "index_target_races_on_race_id"

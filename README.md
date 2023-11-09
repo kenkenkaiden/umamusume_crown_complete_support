@@ -38,7 +38,7 @@
 
 # データベース設計
 ## ER図
-[![ER図](https://i.gyazo.com/960d199f0ced8948b93f589b9ad9bd87.png)](https://gyazo.com/960d199f0ced8948b93f589b9ad9bd87)
+[![ER図](https://i.gyazo.com/0c6a83250abd3d18a7e122f2f3d1e3f1.png)](https://gyazo.com/0c6a83250abd3d18a7e122f2f3d1e3f1)
 ## テーブル設計
 実際にテーブル作成がされていないものもあります。  
 2023年9月27日現在の構想となります。
@@ -118,6 +118,8 @@ belongs_to :user
 | ------------------ | ---------- | ------------------------------ |
 | umamusume          | references | null: false, foreign_key: true |
 | race               | references | null: false, foreign_key: true |
+| race_period        | string     | null: false                    |
+
 #### Association
 belongs_to :umamusume  
 belongs_to :race  
