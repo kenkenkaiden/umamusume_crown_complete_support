@@ -38,7 +38,7 @@
 
 # データベース設計
 ## ER図
-[![ER図](https://i.gyazo.com/0c6a83250abd3d18a7e122f2f3d1e3f1.png)](https://gyazo.com/0c6a83250abd3d18a7e122f2f3d1e3f1)
+[![ER図](https://i.gyazo.com/cb7e2947f2c8481ac50ecad528db4f85.png)](https://gyazo.com/cb7e2947f2c8481ac50ecad528db4f85)
 ## テーブル設計
 実際にテーブル作成がされていないものもあります。  
 2023年9月27日現在の構想となります。
@@ -72,10 +72,7 @@ has_many :support_cards
 #### Association
 #### 複数のウマ娘が同じトレーナーに所属している
 belongs_to :user
-#### ウマ娘はいくつもの目標レースを持っている
-#### ウマ娘は何らかの対応するレースがないと登録ができないわけではないので、親と子の関係ではない
-has_many :target_races  
-has_many :races, through: :target_races  
+
 #### ウマ娘は1人につき、いくつもの勝利済みレースを記録できる
 has_many :record_of_wins  
 has_many :races, through: :record_of_wins
@@ -116,13 +113,13 @@ belongs_to :user
 ### target_racesテーブル（ウマ娘の目標レースを管理する中間テーブル）
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| umamusume          | references | null: false, foreign_key: true |
+| umamusume_name     | references | null: false                    |
 | race               | references | null: false, foreign_key: true |
-| race_period        | string     | null: false                    |
+| period             | string     | null: false                    |
 
 #### Association
-belongs_to :umamusume  
 belongs_to :race  
+なぜumammusumesテーブルとのアソシエーションを組まないかというと、umamusumesがいなくなっても目標レースは不変だから。
 
 ### record_of_winsテーブル（ウマ娘の勝利済みレースを管理する中間テーブル）
 | Column             | Type       | Options                        |

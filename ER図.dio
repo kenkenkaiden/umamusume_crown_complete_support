@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="v6UMTtF0DdxIM7lpbUff" name="ページ1">
-        <mxGraphModel dx="895" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="999" dy="701" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -95,9 +95,9 @@
                         <mxPoint x="360" y="160" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="89" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;startArrow=none;startFill=0;endArrow=ERmany;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="96" edge="1">
+                <mxCell id="89" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontColor=#000000;startArrow=ERmany;startFill=0;endArrow=ERmany;endFill=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="52" target="151" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="120" y="380" as="targetPoint"/>
+                        <mxPoint x="160" y="370" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="52" value="races" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;labelBackgroundColor=none;strokeColor=#3399FF;fontColor=#FFFFFF;fillColor=#3399FF;" parent="1" vertex="1">
@@ -144,24 +144,6 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="90" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;" parent="1" target="99" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="370" y="411" as="sourcePoint"/>
-                        <mxPoint x="200" y="455" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="96" value="target_races" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fontColor=#000000;fillColor=#FFCCFF;" parent="1" vertex="1">
-                    <mxGeometry x="80" y="370" width="160" height="120" as="geometry"/>
-                </mxCell>
-                <mxCell id="99" value="umamusme_id" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;gradientColor=none;" parent="96" vertex="1">
-                    <mxGeometry y="30" width="160" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="98" value="race_id" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="96" vertex="1">
-                    <mxGeometry y="60" width="160" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="144" value="race_period" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;gradientColor=none;fontColor=#000000;" vertex="1" parent="96">
-                    <mxGeometry y="90" width="160" height="30" as="geometry"/>
-                </mxCell>
                 <mxCell id="121" value="&lt;span style=&quot;background-color: rgb(255, 204, 255);&quot;&gt;record_of_wins&lt;/span&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;labelBackgroundColor=#18141D;fontColor=#000000;fillColor=#FFCCFF;gradientColor=none;html=1;" parent="1" vertex="1">
                     <mxGeometry x="370" y="100" width="160" height="90" as="geometry"/>
                 </mxCell>
@@ -170,6 +152,18 @@
                 </mxCell>
                 <mxCell id="126" value="race_id" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;labelBackgroundColor=#FFFFFF;fontColor=#000000;html=1;" parent="121" vertex="1">
                     <mxGeometry y="60" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="target_races" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;strokeColor=#3399FF;fontColor=#FFFFFF;fillColor=#3399FF;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="380" width="160" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="umamusme" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;gradientColor=none;" parent="151" vertex="1">
+                    <mxGeometry y="26" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="race_id" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontColor=#000000;" parent="151" vertex="1">
+                    <mxGeometry y="56" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="race_period" style="text;strokeColor=none;fillColor=#FFFFFF;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;gradientColor=none;fontColor=#000000;" parent="151" vertex="1">
+                    <mxGeometry y="86" width="160" height="34" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

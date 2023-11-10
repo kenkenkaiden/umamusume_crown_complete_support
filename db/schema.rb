@@ -58,13 +58,13 @@ ActiveRecord::Schema.define(version: 2023_10_31_223101) do
   end
 
   create_table "target_races", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.bigint "umamusume_id", null: false
+    t.bigint "umamusume_name_id", null: false
     t.bigint "race_id", null: false
-    t.string "race_period", null: false
+    t.string "period", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["race_id"], name: "index_target_races_on_race_id"
-    t.index ["umamusume_id"], name: "index_target_races_on_umamusume_id"
+    t.index ["umamusume_name_id"], name: "index_target_races_on_umamusume_name_id"
   end
 
   create_table "umamusumes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -101,6 +101,5 @@ ActiveRecord::Schema.define(version: 2023_10_31_223101) do
   add_foreign_key "record_of_wins", "races"
   add_foreign_key "record_of_wins", "umamusumes"
   add_foreign_key "target_races", "races"
-  add_foreign_key "target_races", "umamusumes"
   add_foreign_key "umamusumes", "users"
 end
