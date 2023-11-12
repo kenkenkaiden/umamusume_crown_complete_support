@@ -79,3 +79,7 @@ gem 'roo'
 
 
 gem 'dartsass-sprockets'
+
+
+# 初期データを作成・管理することができるgem
+gem 'seed-fu'
