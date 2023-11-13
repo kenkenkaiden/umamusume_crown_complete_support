@@ -1,0 +1,2 @@
+class TargetRace < ApplicationRecord
+end
