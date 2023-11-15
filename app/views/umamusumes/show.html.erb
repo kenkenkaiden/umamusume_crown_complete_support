@@ -8,11 +8,11 @@
     <li class="list-group-item">EX</li>
   </ul>
 
-<%= render partial: "shared/calendar_section", locals: { title: "ジュニア級", period: "junior"} %>
+  <%= render partial: "shared/calendar_section", locals: { title: "ジュニア級", period: "junior", target_races: @target_races } %>
 
-<%= render partial: "shared/calendar_section", locals: { title: "クラシック級", period: "classic"} %>
-
-<%= render partial: "shared/calendar_section", locals: { title: "シニア級", period: "senior"} %>
+  <%= render partial: "shared/calendar_section", locals: { title: "クラシック級", period: "classic", target_races: @target_races } %>
+  
+  <%= render partial: "shared/calendar_section", locals: { title: "シニア級", period: "senior", target_races: @target_races } %>
   
   <div class="row">
     <% @races.each do |race| %>

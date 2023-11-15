@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-12 my-custom-col"><h3><%= title %></h3></div>
   <div class="row">
@@ -9,7 +10,8 @@
             <% if races.any? %>
               <% races.each do |race| %>
                 <% btn_label = @umamusume.won_race?(race) ? "☆#{race.name}" : "・#{race.name}" %>
-                <%= button_to btn_label, @umamusume.won_race?(race) ? umamusume_race_path(@umamusume, race) : umamusume_races_path(@umamusume, race_id: race.id), method: @umamusume.won_race?(race) ? :delete : :post, class: @umamusume.won_race?(race) ? "btn btn-primary" : "btn btn-dark", role: "button" %>
+                <% css_class = @target_races.any? { |target_race| target_race.race_id == race.id } ? (@umamusume.won_race?(race) ? "btn btn-outline-primary" : "btn btn-outline-dark") : (@umamusume.won_race?(race) ? "btn btn-primary" : "btn btn-dark") %>
+                <%= button_to btn_label, @umamusume.won_race?(race) ? umamusume_race_path(@umamusume, race) : umamusume_races_path(@umamusume, race_id: race.id), method: @umamusume.won_race?(race) ? :delete : :post, class: css_class, role: "button" %>
               <% end %>
             <% else %>
               <p>（レースなし）</p>

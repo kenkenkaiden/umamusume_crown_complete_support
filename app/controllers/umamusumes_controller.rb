@@ -24,8 +24,9 @@ class UmamusumesController < ApplicationController
     @umamusume = Umamusume.find(params[:id])
     @races = Race.order("default_order ASC")
     @races_by_month = Race.where.not(date_junior: nil).group_by { |race| race.date_junior.split('月')[0] }
+    @target_races = TargetRace.where(umamusume_name: @umamusume.name)
 
-    ## 実装済みのG1、G2、G3レースの総数をテーブルから取得
+    ## ゲーム内に実装済みのG1、G2、G3レースの総数をテーブルから取得
     grade_counts = Race.group(:grade).count
     @g1_count = @umamusume.g1_count
     @g2_count = @umamusume.g2_count
