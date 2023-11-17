@@ -67,6 +67,9 @@ class UmamusumeListService
       { name: "メジロパーマー", turf: "A", dirt: "G", sprint: "G", mile: "F", intermediate: "A", long: "A" },
       {name: "ダイタクヘリオス", turf: "A", dirt: "G", sprint: "B", mile: "A", intermediate: "B", long: "E" },
       {name: "ツインターボ", turf: "A", dirt: "F", sprint: "G", mile: "A", intermediate: "A", long: "E" },
+      {name: "サトノダイヤモンド", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      {name: "キタサンブラック", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
+      {name: "サクラチヨノオー", turf: "A", dirt: "G", sprint: "E", mile: "A", intermediate: "A", long: "E" },
       # 他のウマ娘データをどんどんここに追加していく
     ]
     # .map do |umamusume|
