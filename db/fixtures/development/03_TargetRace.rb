@@ -1,14 +1,20 @@
 TargetRace.seed(
   {
-    id: '3',
+    id: '5',
     umamusume_name: 'スペシャルウィーク',
-    race_id: '10',
-    period: 'classic'
+    race_id: '6',
+    period: 'senior'
   },
   {
-    id: '4',
+    id: '6',
     umamusume_name: 'スペシャルウィーク',
-    race_id: '15',
-    period: 'classic'
+    race_id: '19',
+    period: 'senoir'
+  },
+  {
+    id: '7',
+    umamusume_name: 'スペシャルウィーク',
+    race_id: '23',
+    period: 'senoir'
   },
 )
