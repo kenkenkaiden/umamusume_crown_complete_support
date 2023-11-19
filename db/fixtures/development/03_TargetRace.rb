@@ -1,44 +1,44 @@
 TargetRace.seed(
   {
-    id: '8',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '157',
+    id: '15',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '158',
     period: 'junior'
   },
   {
-    id: '9',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '42',
+    id: '17',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '5',
     period: 'classic'
   },
   {
-    id: '10',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '60',
+    id: '18',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '10',
     period: 'classic'
   },
   {
-    id: '11',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '43',
+    id: '19',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '15',
+    period: 'classic'
+  },
+  {
+    id: '20',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '6',
     period: 'senoir'
   },
   {
-    id: '12',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '12',
+    id: '21',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '19',
     period: 'senoir'
   },
   {
-    id: '13',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '62',
-    period: 'senoir'
-  },
-  {
-    id: '14',
-    umamusume_name: 'サイレンススズカ',
-    race_id: '16',
+    id: '22',
+    umamusume_name: 'トウカイテイオー',
+    race_id: '23',
     period: 'senoir'
   },
 )
