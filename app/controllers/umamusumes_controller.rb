@@ -32,6 +32,7 @@ class UmamusumesController < ApplicationController
     @g2_count = @umamusume.g2_count
     @g3_count = @umamusume.g3_count
 
+    @all_pattern_race = @g1_count + @g2_count + @g3_count
   end
 
   def destroy
