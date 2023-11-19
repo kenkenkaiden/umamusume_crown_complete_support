@@ -27,18 +27,18 @@ TargetRace.seed(
     id: '20',
     umamusume_name: 'トウカイテイオー',
     race_id: '6',
-    period: 'senoir'
+    period: 'senior'
   },
   {
     id: '21',
     umamusume_name: 'トウカイテイオー',
     race_id: '19',
-    period: 'senoir'
+    period: 'senior'
   },
   {
     id: '22',
     umamusume_name: 'トウカイテイオー',
     race_id: '23',
-    period: 'senoir'
+    period: 'senior'
   },
 )
