@@ -70,6 +70,16 @@ class UmamusumeListService
       { name: "サトノダイヤモンド", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
       { name: "キタサンブラック", turf: "A", dirt: "G", sprint: "E", mile: "C", intermediate: "A", long: "A" },
       { name: "サクラチヨノオー", turf: "A", dirt: "G", sprint: "E", mile: "A", intermediate: "A", long: "E" },
+      { name: "シリウスシンボリ", turf: "A", dirt: "G", sprint: "G", mile: "B", intermediate: "A", long: "C" },
+      { name: "メジロアルダン", turf: "A", dirt: "F", sprint: "E", mile: "B", intermediate: "A", long: "D" },
+      { name: "メジロアルダン", turf: "A", dirt: "F", sprint: "E", mile: "B", intermediate: "A", long: "D" },
+      { name: "ヤエノムテキ", turf: "A", dirt: "E", sprint: "G", mile: "B", intermediate: "A", long: "E" },
+      # { name: "ツルマルツヨシ", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+      { name: "メジロブライト", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
+      # { name: "デアリングタクト", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+      { name: "サクラローレル", turf: "A", dirt: "E", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      { name: "ナリタトップロード", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
+      { name: "ヤマニンゼファー", turf: "A", dirt: "D", sprint: "B", mile: "A", intermediate: "A", long: "G" },
       # 他のウマ娘データをどんどんここに追加していく
     ]
     # .map do |umamusume|
