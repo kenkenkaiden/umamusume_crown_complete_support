@@ -6,8 +6,6 @@ Race.seed do |s|
   s.classification = '中距離'
   s.distance = '2000'
   s.date_junior = '6月'
-  # s.date_classic
-  # s.date_seniors
   s.course = '中京'
   s.default_order = 303
 end
