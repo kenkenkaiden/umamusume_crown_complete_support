@@ -8,6 +8,7 @@ Race.seed do |s|
   s.date_junior = '6月'
   s.course = '阪神'
   s.default_order = 301
+end
 
 Race.seed do |s|
   s.id    = 157
