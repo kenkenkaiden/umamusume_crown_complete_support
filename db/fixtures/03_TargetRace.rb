@@ -42,6 +42,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
+
   {
     id: '8',
     umamusume_name: 'サイレンススズカ',
@@ -51,7 +52,7 @@ TargetRace.seed(
   {
     id: '9',
     umamusume_name: 'サイレンススズカ',
-    race_id: '42  ',
+    race_id: '42',
     period: 'classic'
   },
   {
