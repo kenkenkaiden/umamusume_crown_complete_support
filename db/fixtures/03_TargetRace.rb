@@ -129,4 +129,60 @@ TargetRace.seed(
     race_id: '23',
     period: 'senior'
   },
+
+
+  {
+    id: '23',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '159',
+    period: 'junior'
+  },
+  {
+    id: '24',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '22',
+    period: 'junior'
+  },
+  {
+    id: '25',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '46',
+    period: 'classic'
+  },
+  {
+    id: '26',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '5',
+    period: 'classic'
+  },
+  {
+    id: '27',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '28',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '23',
+    period: 'classic'
+  },
+  {
+    id: '29',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '3',
+    period: 'senior'
+  },
+  {
+    id: '30',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '11',
+    period: 'senior'
+  },
+  {
+    id: '31',
+    umamusume_name: 'マルゼンスキー',
+    race_id: '16',
+    period: 'senior'
+  },
 )

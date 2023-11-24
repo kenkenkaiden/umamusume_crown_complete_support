@@ -39,12 +39,12 @@ end
 
 Race.seed do |s|
   s.id    = 159
-  s.name = 'メイクデビュー(トウカイテイオー)'
+  s.name = 'メイクデビュー(マルゼンスキー)'
   s.grade = 'OP'
   s.surface = '芝'
-  s.classification = '中距離'
-  s.distance = '2000'
+  s.classification = '短距離'
+  s.distance = '1200'
   s.date_junior = '6月'
-  s.course = '中京'
-  s.default_order = 303
+  s.course = '中山'
+  s.default_order = 304
 end
