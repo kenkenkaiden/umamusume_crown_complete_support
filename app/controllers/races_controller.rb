@@ -6,11 +6,11 @@ class RacesController < ApplicationController
     # レースの登録処理を実行
     if @umamusume.won_race?(@race)
       # すでに登録済みの場合の処理
-      flash[:alert] = "このレースはすでに登録されています。"
+      flash[:alert] = 'このレースはすでに登録されています。'
     else
       # レースを登録する処理
       @umamusume.races << @race
-      flash[:notice] = "レースが登録されました。"
+      flash[:notice] = 'レースが登録されました。'
     end
 
     redirect_to umamusume_path(@umamusume)
@@ -21,11 +21,8 @@ class RacesController < ApplicationController
     race = Race.find(params[:id])
     record = RecordOfWin.find_by(umamusume: umamusume, race: race)
 
-    if record
-      record.destroy
-    end
+    record.destroy if record
 
     redirect_to umamusume_path(umamusume)
   end
-
 end

@@ -22,7 +22,7 @@ class UmamusumesController < ApplicationController
 
   def show
     @umamusume = Umamusume.find(params[:id])
-    @races = Race.order("default_order ASC")
+    @races = Race.order('default_order ASC')
     @races_by_month = Race.where.not(date_junior: nil).group_by { |race| race.date_junior.split('月')[0] }
     @target_races = TargetRace.where(umamusume_name: @umamusume.name)
 
@@ -37,10 +37,10 @@ class UmamusumesController < ApplicationController
 
   def destroy
     @umamusume = Umamusume.find(params[:id])
-    if @umamusume.destroy
-      @umamusumes = current_user.umamusumes
-      render :index
-    end
+    return unless @umamusume.destroy
+
+    @umamusumes = current_user.umamusumes
+    render :index
   end
 
   private
