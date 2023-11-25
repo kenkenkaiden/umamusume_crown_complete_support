@@ -54,7 +54,7 @@ class UmamusumeListService
       { name: "ニシノフラワー", turf: "A", dirt: "F", sprint: "A", mile: "A", intermediate: "E", long: "G" },
       { name: "ハルウララ", turf: "G", dirt: "A", sprint: "A", mile: "B", intermediate: "G", long: "G" },
       { name: "バンブーメモリー", turf: "A", dirt: "D", sprint: "A", mile: "A", intermediate: "C", long: "G" },
-      # { name: "ビコーペガサス", turf: "A", dirt: "D", sprint: "A", mile: "A", intermediate: "C", long: "G" },
+    # { name: "ビコーペガサス", turf: "A", dirt: "D", sprint: "A", mile: "A", intermediate: "C", long: "G" },
       { name: "マーベラスサンデー", turf: "A", dirt: "F", sprint: "G", mile: "C", intermediate: "A", long: "B" },
       { name: "マチカネフクキタル", turf: "A", dirt: "F", sprint: "F", mile: "C", intermediate: "A", long: "A" },
       { name: "ミスターシービー", turf: "A", dirt: "G", sprint: "G", mile: "B", intermediate: "A", long: "A" },
@@ -63,7 +63,7 @@ class UmamusumeListService
       { name: "ナイスネイチャ", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
       { name: "キングヘイロー", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
       { name: "マチカネタンホイザ", turf: "A", dirt: "G", sprint: "G", mile: "D", intermediate: "A", long: "A" },
-      # { name: "イクノディクタス", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+    # { name: "イクノディクタス", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
       { name: "メジロパーマー", turf: "A", dirt: "G", sprint: "G", mile: "F", intermediate: "A", long: "A" },
       { name: "ダイタクヘリオス", turf: "A", dirt: "G", sprint: "B", mile: "A", intermediate: "B", long: "E" },
       { name: "ツインターボ", turf: "A", dirt: "F", sprint: "G", mile: "A", intermediate: "A", long: "E" },
@@ -74,13 +74,13 @@ class UmamusumeListService
       { name: "メジロアルダン", turf: "A", dirt: "F", sprint: "E", mile: "B", intermediate: "A", long: "D" },
       { name: "メジロアルダン", turf: "A", dirt: "F", sprint: "E", mile: "B", intermediate: "A", long: "D" },
       { name: "ヤエノムテキ", turf: "A", dirt: "E", sprint: "G", mile: "B", intermediate: "A", long: "E" },
-      # { name: "ツルマルツヨシ", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+    # { name: "ツルマルツヨシ", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
       { name: "メジロブライト", turf: "A", dirt: "G", sprint: "F", mile: "C", intermediate: "A", long: "A" },
-      # { name: "デアリングタクト", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+    # { name: "デアリングタクト", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
       { name: "サクラローレル", turf: "A", dirt: "E", sprint: "G", mile: "C", intermediate: "A", long: "A" },
       { name: "ナリタトップロード", turf: "A", dirt: "G", sprint: "G", mile: "C", intermediate: "A", long: "A" },
       { name: "ヤマニンゼファー", turf: "A", dirt: "D", sprint: "B", mile: "A", intermediate: "A", long: "G" },
-      # 他のウマ娘データをどんどんここに追加していく
+    # 他のウマ娘データをどんどんここに追加していく
     ]
     # .map do |umamusume|
     #   umamusume[:image] = "#{umamusume[:name]}（公式SNSアイコン）.png"

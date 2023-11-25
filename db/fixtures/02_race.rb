@@ -48,3 +48,16 @@ Race.seed do |s|
   s.course = '中山'
   s.default_order = 304
 end
+
+
+Race.seed do |s|
+  s.id    = 160
+  s.name = 'メイクデビュー(フジキセキ)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_junior = '6月'
+  s.course = '新潟'
+  s.default_order = 305
+end

@@ -185,4 +185,78 @@ TargetRace.seed(
     race_id: '16',
     period: 'senior'
   },
+
+
+  {
+    id: '32',
+    umamusume_name: 'フジキセキ',
+    race_id: '160',
+    period: 'junior'
+  },
+  {
+    id: '33',
+    umamusume_name: 'フジキセキ',
+    race_id: '22',
+    period: 'junior'
+  },
+  {
+    id: '34',
+    umamusume_name: 'フジキセキ',
+    race_id: '42',
+    period: 'classic'
+  },
+  {
+    id: '35',
+    umamusume_name: 'フジキセキ',
+    race_id: '5',
+    period: 'classic'
+  },
+  {
+    id: '36',
+    umamusume_name: 'フジキセキ',
+    race_id: '7',
+    period: 'classic'
+  },
+  {
+    id: '37',
+    umamusume_name: 'フジキセキ',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '38',
+    umamusume_name: 'フジキセキ',
+    race_id: '15',
+    period: 'classic'
+  },
+  {
+    id: '39',
+    umamusume_name: 'フジキセキ',
+    race_id: '18',
+    period: 'classic'
+  },
+  {
+    id: '40',
+    umamusume_name: 'フジキセキ',
+    race_id: '2',
+    period: 'senior'
+  },
+  {
+    id: '41',
+    umamusume_name: 'フジキセキ',
+    race_id: '11',
+    period: 'senior'
+  },
+  {
+    id: '42',
+    umamusume_name: 'フジキセキ',
+    race_id: '16',
+    period: 'senior'
+  },
+  {
+    id: '43',
+    umamusume_name: 'フジキセキ',
+    race_id: '23',
+    period: 'senior'
+  },
 )
