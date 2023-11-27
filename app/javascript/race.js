@@ -1,7 +1,11 @@
-window.addEventListener('load', function(){
-  const registrationButton = document.getElementById("umamusumes_registration");
+window.addEventListener('load', function () {
+  const raceButtons = document.getElementsByClassName("button_to");
 
-  registrationButton.addEventListener('mouseover', function(){
-    console.log("mouseover OK")
-  })
+  const buttonsArray = Array.from(raceButtons);
+
+  buttonsArray.forEach(function (button) {
+    button.addEventListener('mouseover', function () {
+      console.log("mouseover OK");
+    });
+  });
 });
