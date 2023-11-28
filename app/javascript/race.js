@@ -1,11 +1,12 @@
-window.addEventListener('load', function () {
-  const raceButtons = document.getElementsByClassName("button_to");
+window.addEventListener('load', function(){
+  const raceButtons = document.querySelectorAll(".btn.btn-primary, .btn.btn-danger");
 
   const buttonsArray = Array.from(raceButtons);
 
   buttonsArray.forEach(function (button) {
-    button.addEventListener('mouseover', function () {
-      console.log("mouseover OK");
+    button.addEventListener('click', function (event) {
+      event.preventDefault(); // デフォルトのボタンクリックを無効化
+      console.log("Button Clicked");
     });
   });
 });
