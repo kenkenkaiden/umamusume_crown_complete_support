@@ -61,3 +61,15 @@ Race.seed do |s|
   s.course = '新潟'
   s.default_order = 305
 end
+
+Race.seed do |s|
+  s.id    = 161
+  s.name = 'メイクデビュー(オグリキャップ)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_junior = '6月'
+  s.course = '阪神'
+  s.default_order = 306
+end

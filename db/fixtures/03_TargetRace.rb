@@ -259,4 +259,42 @@ TargetRace.seed(
     race_id: '23',
     period: 'senior'
   },
+
+
+  {
+    id: '44',
+    umamusume_name: 'オグリキャップ',
+    race_id: '161',
+    period: 'junior'
+  },
+  {
+    id: '45',
+    umamusume_name: 'オグリキャップ',
+    race_id: '7',
+    period: 'classic'
+  },
+  {
+    id: '46',
+    umamusume_name: 'オグリキャップ',
+    race_id: '18',
+    period: 'classic'
+  },
+  {
+    id: '47',
+    umamusume_name: 'オグリキャップ',
+    race_id: '23',
+    period: 'classic'
+  },
+  {
+    id: '48',
+    umamusume_name: 'オグリキャップ',
+    race_id: '16',
+    period: 'senior'
+  },
+  {
+    id: '49',
+    umamusume_name: 'オグリキャップ',
+    race_id: '23',
+    period: 'senior'
+  },
 )
