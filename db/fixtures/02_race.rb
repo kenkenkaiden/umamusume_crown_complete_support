@@ -73,3 +73,15 @@ Race.seed do |s|
   s.course = '阪神'
   s.default_order = 306
 end
+
+Race.seed do |s|
+  s.id    = 162
+  s.name = 'メイクデビュー(ゴールドシップ)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2000'
+  s.date_junior = '6月'
+  s.course = '札幌'
+  s.default_order = 307
+end
