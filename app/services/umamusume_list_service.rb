@@ -85,7 +85,7 @@ class UmamusumeListService
       { name: 'ダイイチルビー', turf: 'A', dirt: 'G', sprint: 'A', mile: 'A', intermediate: 'C', long: 'G' },
       { name: 'メジロラモーヌ', turf: 'A', dirt: 'F', sprint: 'B', mile: 'A', intermediate: 'A', long: 'E' },
       { name: 'アストンマーチャン', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'G', long: 'G' },
-      # { name: 'サトノクラウン', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'G', long: 'G' },
+      { name: 'サトノクラウン', turf: 'A', dirt: 'G', sprint: 'G', mile: 'B', intermediate: 'A', long: 'E' },
       # { name: 'シュヴァルグラン', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'G', long: 'G' },
       # { name: 'ヴィルシーナ', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'G', long: 'G' },
       # { name: 'ヴィブロス', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'G', long: 'G' },
