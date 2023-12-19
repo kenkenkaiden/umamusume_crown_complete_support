@@ -1,3 +1,5 @@
+# メイクデビュー含めた目標レースを書く
+
 TargetRace.seed(
   {
     id: '1',
@@ -353,4 +355,66 @@ TargetRace.seed(
     race_id: '23',
     period: 'senior'
   },
+
+
+  {
+    id: '59',
+    umamusume_name: 'ウオッカ',
+    race_id: '163',
+    period: 'junior'
+  },
+  {
+    id: '60',
+    umamusume_name: 'ウオッカ',
+    race_id: '21',
+    period: 'junior'
+  },
+  {
+    id: '61',
+    umamusume_name: 'ウオッカ',
+    race_id: '41',
+    period: 'classic'
+  },
+  {
+    id: '62',
+    umamusume_name: 'ウオッカ',
+    race_id: '4',
+    period: 'classic'
+  },
+  {
+    id: '63',
+    umamusume_name: 'ウオッカ',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '64',
+    umamusume_name: 'ウオッカ',
+    race_id: '14',
+    period: 'classic'
+  },
+  {
+    id: '65',
+    umamusume_name: 'ウオッカ',
+    race_id: '23',
+    period: 'classic'
+  },
+  {
+    id: '66',
+    umamusume_name: 'ウオッカ',
+    race_id: '8',
+    period: 'senior'
+  },
+  {
+    id: '67',
+    umamusume_name: 'ウオッカ',
+    race_id: '11',
+    period: 'senior'
+  },
+  {
+    id: '68',
+    umamusume_name: 'ウオッカ',
+    race_id: '16',
+    period: 'senior'
+  }
 )

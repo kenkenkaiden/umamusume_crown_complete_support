@@ -1,3 +1,5 @@
+# 主にメイクデビューレースの情報を書く
+
 Race.seed do |s|
   s.id    = 156
   s.name = 'メイクデビュー(スペシャルウィーク)'
@@ -84,4 +86,16 @@ Race.seed do |s|
   s.date_junior = '6月'
   s.course = '札幌'
   s.default_order = 307
+end
+
+Race.seed do |s|
+  s.id    = 163
+  s.name = 'メイクデビュー(ウオッカ)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_junior = '6月'
+  s.course = '京都'
+  s.default_order = 308
 end
