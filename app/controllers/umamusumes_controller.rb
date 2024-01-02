@@ -3,6 +3,14 @@ class UmamusumesController < ApplicationController
 
   def index
     @umamusumes = current_user.umamusumes if user_signed_in?
+
+    ## ゲーム内に実装済みのG1、G2、G3レースの総数をテーブルから取得
+    grade_counts = Race.group(:grade).count
+    g1_count = grade_counts["G1"] || 0
+    g2_count = grade_counts["G2"] || 0
+    g3_count = grade_counts["G3"] || 0
+
+    @all_pattern_race = g1_count + g2_count + g3_count
   end
 
   def new
