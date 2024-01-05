@@ -11,7 +11,7 @@
     <li class="list-group-item">EX<p>実装中ッ！</p>しばし待つのだ！</li>
   </ul>
 
-  <%#= ↓↓ Boostrapのアコーディオン機能を用いて、レースをジュニア・クラシック・シニア級の3つに分けてカレンダー状に表示 ↓↓ %>
+  <!-- ↓↓ Boostrapのアコーディオン機能を用いて、レースをジュニア・クラシック・シニア級の3つに分けてカレンダー状に表示 -->
   <div class="accordion" id="accordioncalendar">
     <% ["ジュニア級", "クラシック級", "シニア級"].each_with_index do |class_title, index| %>
       <div class="accordion-item">
@@ -34,26 +34,28 @@
     <% end %>
   </div>
 
-  <div class="row">
-    <% @races.each do |race| %>
-      <div class="col-md-4 my-custom-col">
-        <div class="card text-center mb-4">
-          <% if race.surface == "芝" %>
-            <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
-          <% else %>
-            <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
-          <% end %>
-          <div class="card-body">
-            <h6 class="card-title"><%= race.name %></h5>
-            <p class="card-text"></p>
-            <% if @umamusume.won_race?(race) %>
-              <%= button_to "解除", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
-            <% else %>
-              <%= button_to "登録", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-primary", role: "button" %>
-            <% end %>
+  <!-- レースのグレードごとに分けて表示する-->
+  <div class="accordion" id="accordionracegrade">
+    <% ["GⅠ", "GⅡ", "GⅢ", "EX"].each_with_index do |grade_title, index| %>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading<%= index + 1 %>">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index + 1 %>" aria-expanded="true" aria-controls="collapse<%= index + 1 %>">
+            <%= "#{grade_title}レース一覧" %>
+          </button>
+        </h2>
+        <div id="collapse<%= index + 1 %>" class="accordion-collapse collapse show" aria-labelledby="heading<%= index + 1 %>">
+          <div class="accordion-body">
+            <% grade = case grade_title
+                        when "GⅠ" then "G1"
+                        when "GⅡ" then "G2"
+                        when "GⅢ" then "G3"
+                        when "EX" then "EX"
+                        end %>
+            <%= render partial: "shared/race_section_sorted_by_grade", locals: { title: grade_title, grade: grade} %>
           </div>
         </div>
       </div>
     <% end %>
   </div>
+
 </div>

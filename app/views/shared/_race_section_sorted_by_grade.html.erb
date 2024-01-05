@@ -1,6 +1,28 @@
 <div class="row">
   <div class="col-md-12 my-custom-col"><h3><%= title %></h3></div>
   <div class="row">
-
+    <div class="row">
+      <% races = Race.where("grade = ?", grade).order("default_order") %>
+      <% races.each do |race| %>
+        <div class="col-md-4 my-custom-col">
+          <div class="card text-center mb-4">
+            <% if race.surface == "芝" %>
+              <%= link_to(image_tag("芝#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
+            <% else %>
+              <%= link_to(image_tag("ダート#{race.grade}トロフィー.jpg", class: "card-img-top", alt: "...", style: "max-width: 15%; height: auto;"), "#") if @umamusume.won_race?(race) %>
+            <% end %>
+            <div class="card-body">
+              <h6 class="card-title"><%= race.name %></h5>
+              <p class="card-text"></p>
+              <% if @umamusume.won_race?(race) %>
+                <%= button_to "解除", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
+              <% else %>
+                <%= button_to "登録", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-primary", role: "button" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
