@@ -11,51 +11,50 @@
     <li class="list-group-item">EX<p>実装中ッ！</p>しばし待つのだ！</li>
   </ul>
 
-  <!-- ↓↓ Boostrapのアコーディオン機能を用いて、レースをジュニア・クラシック・シニア級の3つに分けてカレンダー状に表示 -->
-  <div class="accordion" id="accordioncalendar">
-    <% ["ジュニア級", "クラシック級", "シニア級"].each_with_index do |class_title, index| %>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading<%= index + 1 %>">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index + 1 %>" aria-expanded="true" aria-controls="collapse<%= index + 1 %>">
-            <%= "#{class_title}カレンダー" %>
-          </button>
-        </h2>
-        <div id="collapse<%= index + 1 %>" class="accordion-collapse collapse show" aria-labelledby="heading<%= index + 1 %>">
-          <div class="accordion-body">
-            <% period = case class_title
-                         when "ジュニア級" then "junior"
-                         when "クラシック級" then "classic"
-                         when "シニア級" then "senior"
-                         end %>
-            <%= render partial: "shared/calendar_section", locals: { title: class_title, period: period, target_races: @target_races } %>
-          </div>
+<!-- ↓↓ Boostrapのアコーディオン機能を用いて、レースをジュニア・クラシック・シニア級の3つに分けてカレンダー状に表示 -->
+<div class="accordion" id="accordioncalendar">
+  <% ["ジュニア級", "クラシック級", "シニア級"].each_with_index do |class_title, index| %>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading_calendar_<%= index + 1 %>">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_calendar_<%= index + 1 %>" aria-expanded="true" aria-controls="collapse_calendar_<%= index + 1 %>">
+          <%= "#{class_title}カレンダー" %>
+        </button>
+      </h2>
+      <div id="collapse_calendar_<%= index + 1 %>" class="accordion-collapse collapse show" aria-labelledby="heading_calendar_<%= index + 1 %>">
+        <div class="accordion-body">
+          <% period = case class_title
+                       when "ジュニア級" then "junior"
+                       when "クラシック級" then "classic"
+                       when "シニア級" then "senior"
+                       end %>
+          <%= render partial: "shared/calendar_section", locals: { title: class_title, period: period, target_races: @target_races } %>
         </div>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
+</div>
 
-  <!-- レースのグレードごとに分けて表示する-->
-  <div class="accordion" id="accordionracegrade">
-    <% ["GⅠ", "GⅡ", "GⅢ", "EX"].each_with_index do |grade_title, index| %>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="heading<%= index + 1 %>">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= index + 1 %>" aria-expanded="true" aria-controls="collapse<%= index + 1 %>">
-            <%= "#{grade_title}レース一覧" %>
-          </button>
-        </h2>
-        <div id="collapse<%= index + 1 %>" class="accordion-collapse collapse show" aria-labelledby="heading<%= index + 1 %>">
-          <div class="accordion-body">
-            <% grade = case grade_title
-                        when "GⅠ" then "G1"
-                        when "GⅡ" then "G2"
-                        when "GⅢ" then "G3"
-                        when "EX" then "EX"
-                        end %>
-            <%= render partial: "shared/race_section_sorted_by_grade", locals: { title: grade_title, grade: grade} %>
-          </div>
+<!-- レースのグレードごとに分けて表示する-->
+<div class="accordion" id="accordionracegrade">
+  <% ["GⅠ", "GⅡ", "GⅢ", "EX"].each_with_index do |grade_title, index| %>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading_racegrade_<%= index + 1 %>">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_racegrade_<%= index + 1 %>" aria-expanded="true" aria-controls="collapse_racegrade_<%= index + 1 %>">
+          <%= "#{grade_title}レース一覧" %>
+        </button>
+      </h2>
+      <div id="collapse_racegrade_<%= index + 1 %>" class="accordion-collapse collapse show" aria-labelledby="heading_racegrade_<%= index + 1 %>">
+        <div class="accordion-body">
+          <% grade = case grade_title
+                      when "GⅠ" then "G1"
+                      when "GⅡ" then "G2"
+                      when "GⅢ" then "G3"
+                      when "EX" then "EX"
+                      end %>
+          <%= render partial: "shared/race_section_sorted_by_grade", locals: { title: grade_title, grade: grade} %>
         </div>
       </div>
-    <% end %>
-  </div>
-
+    </div>
+  <% end %>
+</div>
 </div>
