@@ -1,5 +1,5 @@
 <div class="col">
-  <div class="card" style="width: 15rem; <%= umamusume.won_race_count == @all_pattern_race ? 'background-color: #e0f7fa;' : '' %>">
+  <div class="card <%= 'bg-light-blue' if umamusume.won_race_count == @all_pattern_race %>" style="width: 15rem;">
     <%#= link_to(image_tag("#{umamusume.name}（公式SNSアイコン）.png", class: "card-img-top", alt: "..."), root_path) %>
     <div class="card-body">
       <h5 class="card-title"><%= umamusume.name %></h5>
