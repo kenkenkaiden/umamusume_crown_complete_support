@@ -1,13 +1,17 @@
 <div class="contents row">
+
   <div class="container text-center">
+
     <div class="row">
       <% if user_signed_in? %>
-        <% if @umamusumes.any? %>
-          <%# 登録済みのウマ娘を表示させるためのコード%>
+        <% if @umamusumes.any? %> 
+        <!--ユーザーがログインしていて、かつウマ娘が1人以上登録されている場合-->
           <% @umamusumes.each do |umamusume| %>
             <%= render partial: "umamusume", locals: { umamusume: umamusume } %>
           <% end %>
+          
         <% else %>
+        <!--ユーザーがログインしていて、かつウマ娘が1人も登録されていない場合-->
           <div class="col">
             <div class="card" style="width: 15rem;">
               <%= link_to(image_tag("管制室.png", class: "card-img-top", alt: "..."), root_path) %>
@@ -19,7 +23,9 @@
             </div>
           </div>
         <% end %>
+
       <% else %>
+      <!--ユーザーがログインしていない場合-->
         <div class="col">
           <div class="card" style="width: 15rem;">
             <%= link_to(image_tag("管制室.png", class: "card-img-top", alt: "..."), root_path) %>
@@ -32,6 +38,7 @@
         </div>
       <% end %>
     </div>
+    
   </div>
 </div>
 
