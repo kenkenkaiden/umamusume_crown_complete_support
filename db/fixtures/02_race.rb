@@ -99,3 +99,15 @@ Race.seed do |s|
   s.course = '京都'
   s.default_order = 308
 end
+
+Race.seed do |s|
+  s.id    = 164
+  s.name = 'メイクデビュー(ダイワスカーレット)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2000'
+  s.date_junior = '6月'
+  s.course = '京都'
+  s.default_order = 309
+end

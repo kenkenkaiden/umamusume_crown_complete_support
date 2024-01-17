@@ -1,4 +1,5 @@
 # メイクデビュー含めた目標レースを書く
+# キャラとキャラの間は2行空ける
 
 TargetRace.seed(
   {
@@ -417,4 +418,66 @@ TargetRace.seed(
     race_id: '16',
     period: 'senior'
   }
+
+
+  {
+    id: '69',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '164',
+    period: 'junior'
+  },
+  {
+    id: '70',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '41',
+    period: 'classic'
+  },
+  {
+    id: '71',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '4',
+    period: 'classic'
+  },
+  {
+    id: '72',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '9',
+    period: 'classic'
+  },
+  {
+    id: '73',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '74',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '14',
+    period: 'classic'
+  },
+  {
+    id: '75',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '17',
+    period: 'classic'
+  },
+  {
+    id: '76',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '3',
+    period: 'senoir'
+  },
+  {
+    id: '77',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '16',
+    period: 'senior'
+  },
+  {
+    id: '78',
+    umamusume_name: 'ダイワスカーレット',
+    race_id: '23',
+    period: 'senior'
+  },
 )
