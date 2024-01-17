@@ -1,4 +1,5 @@
 # 主にメイクデビューレースの情報を書く
+# race_info.csvファイルにもメイクデビューレース情報の追加をする
 
 Race.seed do |s|
   s.id    = 156
@@ -110,4 +111,15 @@ Race.seed do |s|
   s.date_junior = '6月'
   s.course = '京都'
   s.default_order = 309
+
+  Race.seed do |s|
+    s.id    = 165
+    s.name = 'メイクデビュー(タイキシャトル)'
+    s.grade = 'OP'
+    s.surface = 'ダート'
+    s.classification = 'マイル'
+    s.distance = '1600'
+    s.date_junior = '6月'
+    s.course = '東京'
+    s.default_order = 310
 end

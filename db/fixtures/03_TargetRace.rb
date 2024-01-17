@@ -480,4 +480,54 @@ TargetRace.seed(
     race_id: '23',
     period: 'senior'
   },
+
+
+  {
+    id: '79',
+    umamusume_name: 'タイキシャトル',
+    race_id: '310',
+    period: 'junior'
+  },
+  {
+    id: '80',
+    umamusume_name: 'タイキシャトル',
+    race_id: '82',
+    period: 'junior'
+  },
+  {
+    id: '81',
+    umamusume_name: 'タイキシャトル',
+    race_id: '7',
+    period: 'classic'
+  },
+  {
+    id: '82',
+    umamusume_name: 'タイキシャトル',
+    race_id: '112',
+    period: 'classic'
+  },
+  {
+    id: '83',
+    umamusume_name: 'タイキシャトル',
+    race_id: '18',
+    period: 'classic'
+  },
+  {
+    id: '84',
+    umamusume_name: 'タイキシャトル',
+    race_id: '11',
+    period: 'senior'
+  },
+  {
+    id: '85',
+    umamusume_name: 'タイキシャトル',
+    race_id: '13',
+    period: 'senoir'
+  },
+  {
+    id: '86',
+    umamusume_name: 'タイキシャトル',
+    race_id: '18',
+    period: 'senoir'
+  },
 )
