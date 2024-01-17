@@ -417,7 +417,7 @@ TargetRace.seed(
     umamusume_name: 'ウオッカ',
     race_id: '16',
     period: 'senior'
-  }
+  },
 
 
   {
