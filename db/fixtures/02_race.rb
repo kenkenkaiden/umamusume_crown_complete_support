@@ -111,8 +111,9 @@ Race.seed do |s|
   s.date_junior = '6月'
   s.course = '京都'
   s.default_order = 309
+end
 
-  Race.seed do |s|
+Race.seed do |s|
     s.id    = 165
     s.name = 'メイクデビュー(タイキシャトル)'
     s.grade = 'OP'

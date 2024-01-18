@@ -485,7 +485,7 @@ TargetRace.seed(
   {
     id: '79',
     umamusume_name: 'タイキシャトル',
-    race_id: '310',
+    race_id: '165',
     period: 'junior'
   },
   {
