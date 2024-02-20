@@ -1,5 +1,25 @@
+require 'csv'
+
+CSV.foreach('db/csv/race_info.csv', headers: true) do |row|
+  Race.seed do |s|
+    s.id    = Race.count + 1
+    s.name = row['name']
+    s.grade = row['grade']
+    s.surface = row['surface']
+    s.classification = row['classification']
+    s.distance = row['distance']
+    s.date_junior = row['date_junior']
+    s.course = row['course']
+    s.default_order = row['default_order']
+  end
+end
+
+
+
 # 主にメイクデビューレースの情報を書く
 # race_info.csvファイルにもメイクデビューレース情報の追加をする
+
+
 
 Race.seed do |s|
   s.id    = 156
