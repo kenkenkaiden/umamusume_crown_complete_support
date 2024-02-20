@@ -1,8 +1,15 @@
 require 'csv'
 
-CSV.foreach('db/csv/race_info.csv', headers: true) do |row|
+# CSVファイルのパス
+csv_file_path = 'db/csv/race_info.csv'
+
+# CSVファイルを読み込んでハッシュの配列に変換
+races_data = CSV.read(csv_file_path, headers: true)
+
+# Race.seedを使ってデータを生成
+races_data.each do |row|
   Race.seed do |s|
-    s.id    = Race.count + 1
+    s.id = row['id']
     s.name = row['name']
     s.grade = row['grade']
     s.surface = row['surface']
