@@ -10,7 +10,7 @@ class RacesController < ApplicationController
     else
       # レースを登録する処理
       @umamusume.races << @race
-      flash[:notice] = 'レースが登録されました。'
+      RecordOfWin.create(umamusume: @umamusume, race: @race)
     end
 
     redirect_to umamusume_path(@umamusume)
