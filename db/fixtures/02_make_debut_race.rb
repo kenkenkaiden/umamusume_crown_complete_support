@@ -26,6 +26,9 @@
 # 主にメイクデビューレースの情報を書く
 # race_info.csvファイルにもメイクデビューレース情報の追加をする
 
+# レース情報の更新がない場合、bin\render-build.shの
+# bundle exec rake db:seed_fu RAILS_ENV=production
+# という記述を削除するか、コメントアウトする
 
 
 Race.seed do |s|
