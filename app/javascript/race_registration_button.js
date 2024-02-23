@@ -15,22 +15,7 @@ maidenRaceButtons.forEach(function (button) {
     // レースのIDを取得
     const raceId = button.dataset.raceId;
 
-    // XMLHTTPRequestを使用してサーバーにPOSTリクエストを送信
-    const XHR = new XMLHttpRequest();
-    XHR.open("POST", `/umamusumes/${umamusumeId}/races/${raceId}`, true);
-    XHR.setRequestHeader('Content-Type', 'application/json');
-    XHR.send(JSON.stringify({}));
 
-    // レスポンスを受け取った後の処理
-    XHR.onload = function () {
-      if (XHR.status != 200) {
-        // エラーハンドリング
-        console.error(`Error: ${XHR.status}: ${XHR.statusText}`);
-      } else {
-        // 成功時の処理
-        console.log('レースが登録されました。');
-      }
-    };
   });
 });
 
