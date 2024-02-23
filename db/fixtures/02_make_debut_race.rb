@@ -1,25 +1,25 @@
-require 'csv'
+# require 'csv'
 
-# CSVファイルのパス
-csv_file_path = 'db/csv/race_info.csv'
+# # CSVファイルのパス
+# csv_file_path = 'db/csv/race_info.csv'
 
-# CSVファイルを読み込んでハッシュの配列に変換
-races_data = CSV.read(csv_file_path, headers: true)
+# # CSVファイルを読み込んでハッシュの配列に変換
+# races_data = CSV.read(csv_file_path, headers: true)
 
-# Raceモデルの更新または作成
-races_data.each do |row|
-  race = Race.find_or_initialize_by(id: row['id']) # IDでレースを検索する
-  race.update(
-    name: row['name'],
-    grade: row['grade'],
-    surface: row['surface'],
-    classification: row['classification'],
-    distance: row['distance'],
-    date_junior: row['date_junior'],
-    course: row['course'],
-    default_order: row['default_order']
-  )
-end
+# # Raceモデルの更新または作成
+# races_data.each do |row|
+#   race = Race.find_or_initialize_by(id: row['id']) # IDでレースを検索する
+#   race.update(
+#     name: row['name'],
+#     grade: row['grade'],
+#     surface: row['surface'],
+#     classification: row['classification'],
+#     distance: row['distance'],
+#     date_junior: row['date_junior'],
+#     course: row['course'],
+#     default_order: row['default_order']
+#   )
+# end
 
 
 

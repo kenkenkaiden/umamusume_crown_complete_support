@@ -63,7 +63,7 @@ class UmamusumeListService
       { name: 'ナイスネイチャ', turf: 'A', dirt: 'G', sprint: 'G', mile: 'C', intermediate: 'A', long: 'A' },
       { name: 'キングヘイロー', turf: 'A', dirt: 'G', sprint: 'A', mile: 'B', intermediate: 'B', long: 'C' },
       { name: 'マチカネタンホイザ', turf: 'A', dirt: 'G', sprint: 'G', mile: 'D', intermediate: 'A', long: 'A' },
-      # { name: "イクノディクタス", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+      { name: "イクノディクタス", turf: "A", dirt: "G", sprint: "D", mile: "A", intermediate: "A", long: "D" },
       { name: 'メジロパーマー', turf: 'A', dirt: 'G', sprint: 'G', mile: 'F', intermediate: 'A', long: 'A' },
       { name: 'ダイタクヘリオス', turf: 'A', dirt: 'G', sprint: 'B', mile: 'A', intermediate: 'B', long: 'E' },
       { name: 'ツインターボ', turf: 'A', dirt: 'F', sprint: 'G', mile: 'A', intermediate: 'A', long: 'E' },
@@ -100,7 +100,7 @@ class UmamusumeListService
       { name: 'ネオユニヴァース', turf: 'A', dirt: 'G', sprint: 'F', mile: 'B', intermediate: 'A', long: 'B' },
       { name: 'ヒシミラクル', turf: 'A', dirt: 'G', sprint: 'G', mile: 'G', intermediate: 'A', long: 'A' },
       { name: 'タップダンスシチー', turf: 'A', dirt: 'G', sprint: 'G', mile: 'E', intermediate: 'A', long: 'A' },
-      # { name: 'ドゥラメンテ', turf: 'A', dirt: 'G', sprint: 'G', mile: 'E', intermediate: 'A', long: 'A' },
+      { name: 'ドゥラメンテ', turf: 'A', dirt: 'G', sprint: 'G', mile: 'A', intermediate: 'A', long: 'C' },
       # 他のウマ娘データをどんどんここに追加していく
     ]
     # .map do |umamusume|
