@@ -120,3 +120,29 @@ Race.seed do |s|
   s.course = '東京'
   s.default_order = 10
 end
+
+Race.seed do |s|
+  s.id    = 11
+  s.name = '安田記念'
+  s.grade = 'G1'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_classic = '6月前半'
+  s.date_senior = '6月前半'
+  s.course = '東京'
+  s.default_order = 11
+end
+
+Race.seed do |s|
+  s.id    = 12
+  s.name = '宝塚記念'
+  s.grade = 'G1'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2200'
+  s.date_classic = '6月後半'
+  s.date_senior = '6月後半'
+  s.course = '阪神'
+  s.default_order = 12
+end
