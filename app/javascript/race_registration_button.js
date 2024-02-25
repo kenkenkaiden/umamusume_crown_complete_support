@@ -12,12 +12,17 @@ maidenRaceButtons.forEach(function (button) {
     button.classList.remove("btn-dark");
     button.classList.add("btn-primary");
 
-    // レースのIDを取得
+    // ウマ娘とレースのIDを取得
     const raceId = button.dataset.raceId;
+    const umamusumeId = button.dataset.umamusumeId;
 
-
+    const XHR = new XMLHttpRequest();
+    XHR.open("POST", `/umamusumes/${umamusumeId}/races/${raceId}`, true);
+    XHR.responseType = "json";
+    XHR.send();
   });
 });
+
 
 
 
