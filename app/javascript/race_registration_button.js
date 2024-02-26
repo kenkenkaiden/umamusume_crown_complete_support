@@ -4,7 +4,7 @@ window.addEventListener('load', function(){
   const maidenTargetRaceButtons = document.querySelectorAll(".btn.btn-outline-danger"); //未勝利の目標レースボタンを取得
   const wonTargetRaceButtons = document.querySelectorAll(".btn.btn-danger"); //勝利済みの目標レースボタンを取得
 
-
+/*
 // 未勝利のレースボタンをクリックしたときの挙動
 maidenRaceButtons.forEach(function (button) {
   button.addEventListener('click', function (event) {
@@ -22,7 +22,7 @@ maidenRaceButtons.forEach(function (button) {
     XHR.send();
   });
 });
-
+*/
 
 
 
