@@ -9,10 +9,7 @@ class RacesController < ApplicationController
       # 今のところなし
     else
       # レースを登録する処理
-<<<<<<< HEAD
-=======
       # @umamusume.races << @race
->>>>>>> 1eb4b0af7162d4450476f5cd2743fac83fcceeff
       RecordOfWin.create(umamusume: @umamusume, race: @race)
       flash[:notice] = 'レースが登録されました。'
     end
