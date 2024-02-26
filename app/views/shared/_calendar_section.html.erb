@@ -10,7 +10,7 @@
               <% races.each do |race| %>
                 <% btn_label = @umamusume.won_race?(race) ? "☆#{race.name}" : "・#{race.name}" %>
                 <% css_class = @target_races.any? { |target_race| target_race.race_id == race.id } ? (@umamusume.won_race?(race) ? "btn btn-danger" : "btn btn-outline-danger") : (@umamusume.won_race?(race) ? "btn btn-primary" : "btn btn-dark") %>
-                <%= button_to btn_label, @umamusume.won_race?(race) ? umamusume_race_path(@umamusume, race) : umamusume_races_path(@umamusume, race_id: race.id), method: @umamusume.won_race?(race) ? :delete : :post, class: css_class, role: "button" %>
+                <%= button_to btn_label, @umamusume.won_race?(race) ? umamusume_race_path(@umamusume, race) : umamusume_races_path(@umamusume, race_id: race.id), method: @umamusume.won_race?(race) ? :delete : :post, class: css_class, role: "button", data: { umamusume_id: @umamusume.id, race_id: race.id } %>
               <% end %>
             <% else %>
               <p>（レースなし）</p>

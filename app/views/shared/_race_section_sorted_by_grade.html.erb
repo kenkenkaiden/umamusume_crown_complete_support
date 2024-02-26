@@ -17,7 +17,7 @@
               <% if @umamusume.won_race?(race) %>
                 <%= button_to "解除", umamusume_race_path(@umamusume, race), method: :delete, class: "btn btn-primary", role: "button" %>
               <% else %>
-                <%= button_to "登録", umamusume_races_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-primary", role: "button" %>
+                <%= button_to "登録", umamusume_race_path(@umamusume, race_id: race.id), method: :post, class: "btn btn-primary", role: "button" %>
               <% end %>
             </div>
           </div>
