@@ -6,9 +6,13 @@ class RacesController < ApplicationController
     # レースの登録処理を実行
     if @umamusume.won_race?(@race)
       # すでに登録済みの場合の処理
-      flash[:alert] = 'このレースはすでに登録されています。'
+      # 今のところなし
     else
       # レースを登録する処理
+<<<<<<< HEAD
+=======
+      # @umamusume.races << @race
+>>>>>>> 1eb4b0af7162d4450476f5cd2743fac83fcceeff
       RecordOfWin.create(umamusume: @umamusume, race: @race)
       flash[:notice] = 'レースが登録されました。'
     end
