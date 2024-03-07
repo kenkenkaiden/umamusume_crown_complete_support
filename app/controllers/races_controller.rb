@@ -1,4 +1,7 @@
 class RacesController < ApplicationController
+
+  skip_before_action :verify_authenticity_token
+  
   def create
     @umamusume = Umamusume.find(params[:umamusume_id])
     @race = Race.find(params[:race_id])
