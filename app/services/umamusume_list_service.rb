@@ -80,6 +80,8 @@ class UmamusumeListService
       { name: 'サクラローレル', turf: 'A', dirt: 'E', sprint: 'G', mile: 'C', intermediate: 'A', long: 'A' },
       { name: 'ナリタトップロード', turf: 'A', dirt: 'G', sprint: 'G', mile: 'C', intermediate: 'A', long: 'A' },
       { name: 'ヤマニンゼファー', turf: 'A', dirt: 'D', sprint: 'B', mile: 'A', intermediate: 'A', long: 'G' },
+      # { name: "フリオーソ", turf: "A", dirt: "G", sprint: "A", mile: "B", intermediate: "B", long: "C" },
+      { name: "トランセンド", turf: "F", dirt: "A", sprint: "G", mile: "A", intermediate: "A", long: "G" },
       { name: 'シンボリクリスエス', turf: 'A', dirt: 'G', sprint: 'G', mile: 'E', intermediate: 'A', long: 'A' },
       { name: 'タニノギムレット', turf: 'A', dirt: 'F', sprint: 'F', mile: 'A', intermediate: 'A', long: 'F' },
       { name: 'ダイイチルビー', turf: 'A', dirt: 'G', sprint: 'A', mile: 'A', intermediate: 'C', long: 'G' },
