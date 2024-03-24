@@ -103,6 +103,7 @@ class UmamusumeListService
       { name: 'ヒシミラクル', turf: 'A', dirt: 'G', sprint: 'G', mile: 'G', intermediate: 'A', long: 'A' },
       { name: 'タップダンスシチー', turf: 'A', dirt: 'G', sprint: 'G', mile: 'E', intermediate: 'A', long: 'A' },
       { name: 'ドゥラメンテ', turf: 'A', dirt: 'G', sprint: 'G', mile: 'A', intermediate: 'A', long: 'C' },
+      { name: 'ラインクラフト', turf: 'A', dirt: 'G', sprint: 'A', mile: 'A', intermediate: 'B', long: 'G' }
       # 他のウマ娘データをどんどんここに追加していく
     ]
     # .map do |umamusume|
