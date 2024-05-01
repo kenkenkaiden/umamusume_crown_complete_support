@@ -783,4 +783,72 @@ TargetRace.seed(
       race_id: '23',
       period: 'senior'
     },
+
+    # ナリタブライアン
+    {
+      id: '127',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '171',
+      period: 'junior'
+    },
+    {
+      id: '128',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '22',
+      period: 'junior'
+    },
+    {
+      id: '129',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '5',
+      period: 'classic'
+    },
+    {
+      id: '130',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '10',
+      period: 'classic'
+    },
+    {
+      id: '131',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '15',
+      period: 'classic'
+    },
+    {
+      id: '132',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '23',
+      period: 'classic'
+    },
+    {
+      id: '133',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '45',
+      period: 'senior'
+    },
+    {
+      id: '134',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '6',
+      period: 'senior'
+    },
+    {
+      id: '136',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '16',
+      period: 'senior'
+    },
+    {
+      id: '137',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '19',
+      period: 'senior'
+    },
+    {
+      id: '138',
+      umamusume_name: 'ナリタブライアン',
+      race_id: '23',
+      period: 'senior'
+    },
 )

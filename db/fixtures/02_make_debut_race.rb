@@ -214,3 +214,15 @@ Race.seed do |s|
   s.course = '京都'
   s.default_order = 315
 end
+
+Race.seed do |s|
+  s.id    = 171
+  s.name = 'メイクデビュー(ナリタブライアン)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1800'
+  s.date_junior = '6月'
+  s.course = '函館'
+  s.default_order = 316
+end
