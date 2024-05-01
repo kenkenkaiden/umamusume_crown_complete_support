@@ -178,3 +178,15 @@ Race.seed do |s|
   s.course = '中山'
   s.default_order = 312
 end
+
+Race.seed do |s|
+  s.id    = 168
+  s.name = 'メイクデビュー(メジロマックイーン)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2000'
+  s.date_junior = '6月'
+  s.course = '阪神'
+  s.default_order = 313
+end

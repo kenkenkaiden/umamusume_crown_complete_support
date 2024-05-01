@@ -1,5 +1,6 @@
 # メイクデビュー含めた目標レースを書く
 # キャラとキャラの間は2行空ける
+# このファイルを更新したら"rails db:seed_fu"とターミナルに打ち込む
 
 TargetRace.seed(
   # スペシャルウィーク
@@ -642,5 +643,43 @@ TargetRace.seed(
     umamusume_name: 'ヒシアマゾン',
     race_id: '23',
     period: 'senior'
+  },
+
+  # メジロマックイーン
+  {
+    id: '105',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '168',
+    period: 'junior'
+  },
+  {
+    id: '106',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '60',
+    period: 'classic'
+  },
+  {
+    id: '107',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '15',
+    period: 'classic'
+  },
+  {
+    id: '108',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '6',
+    period: 'senoir'
+  },
+  {
+    id: '109',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '12',
+    period: 'senoir'
+  },
+  {
+    id: '110',
+    umamusume_name: 'メジロマックイーン',
+    race_id: '16',
+    period: 'senoir'
   },
 )
