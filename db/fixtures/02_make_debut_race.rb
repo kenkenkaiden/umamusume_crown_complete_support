@@ -154,3 +154,27 @@ Race.seed do |s|
     s.course = '東京'
     s.default_order = 310
 end
+
+Race.seed do |s|
+  s.id    = 166
+  s.name = 'メイクデビュー(グラスワンダー)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1800'
+  s.date_junior = '6月'
+  s.course = '中山'
+  s.default_order = 311
+end
+
+Race.seed do |s|
+  s.id    = 167
+  s.name = 'メイクデビュー(ヒシアマゾン)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_junior = '6月'
+  s.course = '中山'
+  s.default_order = 312
+end

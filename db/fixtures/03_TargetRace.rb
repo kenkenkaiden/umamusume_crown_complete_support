@@ -2,6 +2,7 @@
 # キャラとキャラの間は2行空ける
 
 TargetRace.seed(
+  # スペシャルウィーク
   {
     id: '1',
     umamusume_name: 'スペシャルウィーク',
@@ -45,7 +46,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # サイレンススズカ
   {
     id: '8',
     umamusume_name: 'サイレンススズカ',
@@ -89,7 +90,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # トウカイテイオー
   {
     id: '15',
     umamusume_name: 'トウカイテイオー',
@@ -133,7 +134,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # マルゼンスキー
   {
     id: '23',
     umamusume_name: 'マルゼンスキー',
@@ -189,7 +190,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # フジキセキ
   {
     id: '32',
     umamusume_name: 'フジキセキ',
@@ -263,7 +264,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # オグリキャップ
   {
     id: '44',
     umamusume_name: 'オグリキャップ',
@@ -301,7 +302,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # ゴールドシップ
   {
     id: '50',
     umamusume_name: 'ゴールドシップ',
@@ -357,7 +358,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # ウオッカ
   {
     id: '59',
     umamusume_name: 'ウオッカ',
@@ -419,7 +420,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # ダイワスカーレット
   {
     id: '69',
     umamusume_name: 'ダイワスカーレット',
@@ -481,7 +482,7 @@ TargetRace.seed(
     period: 'senior'
   },
 
-
+  # タイキシャトル
   {
     id: '79',
     umamusume_name: 'タイキシャトル',
@@ -529,5 +530,117 @@ TargetRace.seed(
     umamusume_name: 'タイキシャトル',
     race_id: '18',
     period: 'senoir'
+  },
+
+  # グラスワンダー
+  {
+    id: '87',
+    umamusume_name: 'グラスワンダー',
+    race_id: '166',
+    period: 'junior'
+  },
+  {
+    id: '88',
+    umamusume_name: 'グラスワンダー',
+    race_id: '22',
+    period: 'junior'
+  },
+  {
+    id: '89',
+    umamusume_name: 'グラスワンダー',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '90',
+    umamusume_name: 'グラスワンダー',
+    race_id: '19',
+    period: 'classic'
+  },
+  {
+    id: '91',
+    umamusume_name: 'グラスワンダー',
+    race_id: '23',
+    period: 'classic'
+  },
+  {
+    id: '92',
+    umamusume_name: 'グラスワンダー',
+    race_id: '12',
+    period: 'senior'
+  },
+  {
+    id: '93',
+    umamusume_name: 'グラスワンダー',
+    race_id: '62',
+    period: 'senior'
+  },
+  {
+    id: '94',
+    umamusume_name: 'グラスワンダー',
+    race_id: '23',
+    period: 'senior'
+  },
+
+  # ヒシアマゾン
+  {
+    id: '95',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '167',
+    period: 'junior'
+  },
+  {
+    id: '96',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '21',
+    period: 'junior'
+  },
+  {
+    id: '97',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '4',
+    period: 'classic'
+  },
+  {
+    id: '98',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '9',
+    period: 'classic'
+  },
+  {
+    id: '99',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '14',
+    period: 'classic'
+  },
+  {
+    id: '100',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '23',
+    period: 'classic'
+  },
+  {
+    id: '101',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '3',
+    period: 'senior'
+  },
+  {
+    id: '102',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '11',
+    period: 'senior'
+  },
+  {
+    id: '103',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '19',
+    period: 'senior'
+  },
+  {
+    id: '104',
+    umamusume_name: 'ヒシアマゾン',
+    race_id: '23',
+    period: 'senior'
   },
 )

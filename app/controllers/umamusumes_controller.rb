@@ -17,7 +17,7 @@ class UmamusumesController < ApplicationController
     set_umamusume_list
   end
 
-  def create
+  def create # 新しくウマ娘を登録する処理
     @umamusume = Umamusume.new(umamusume_params)
     if @umamusume.valid?
       @umamusume.save
@@ -28,7 +28,7 @@ class UmamusumesController < ApplicationController
     end
   end
 
-  def show
+  def show # 登録済みウマ娘の詳細情報を表示する処理
     @umamusume = Umamusume.find(params[:id])
     @races = Race.order('default_order ASC')
     @races_by_month = Race.where.not(date_junior: nil).group_by { |race| race.date_junior.split('月')[0] }
