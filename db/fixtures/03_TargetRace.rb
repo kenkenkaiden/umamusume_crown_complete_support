@@ -732,4 +732,55 @@ TargetRace.seed(
     race_id: '23',
     period: 'senior'
   },
+
+    # テイエムオペラオー
+    {
+      id: '119',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '170',
+      period: 'junior'
+    },
+    # 目標2「ファンを5000人集める」
+    {
+      id: '120',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '5',
+      period: 'classic'
+    },
+    {
+      id: '121',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '10',
+      period: 'classic'
+    },
+    {
+      id: '122',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '23',
+      period: 'classic'
+    },
+    {
+      id: '123',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '6',
+      period: 'senior'
+    },
+    {
+      id: '124',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '12',
+      period: 'senior'
+    },
+    {
+      id: '125',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '19',
+      period: 'senior'
+    },
+    {
+      id: '126',
+      umamusume_name: 'テイエムオペラオー',
+      race_id: '23',
+      period: 'senior'
+    },
 )

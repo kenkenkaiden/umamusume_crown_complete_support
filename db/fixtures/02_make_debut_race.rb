@@ -199,6 +199,18 @@ Race.seed do |s|
   s.classification = 'マイル'
   s.distance = '1600'
   s.date_junior = '6月'
-  s.course = '東京1'
+  s.course = '東京'
   s.default_order = 314
+end
+
+Race.seed do |s|
+  s.id    = 170
+  s.name = 'メイクデビュー(テイエムオペラオー)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2000'
+  s.date_junior = '6月'
+  s.course = '京都'
+  s.default_order = 315
 end
