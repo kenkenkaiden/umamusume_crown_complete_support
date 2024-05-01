@@ -190,3 +190,15 @@ Race.seed do |s|
   s.course = '阪神'
   s.default_order = 313
 end
+
+Race.seed do |s|
+  s.id    = 169
+  s.name = 'メイクデビュー(エルコンドルパサー)'
+  s.grade = 'OP'
+  s.surface = 'ダート'
+  s.classification = 'マイル'
+  s.distance = '1600'
+  s.date_junior = '6月'
+  s.course = '東京1'
+  s.default_order = 314
+end

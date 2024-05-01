@@ -682,4 +682,54 @@ TargetRace.seed(
     race_id: '16',
     period: 'senoir'
   },
+
+  # エルコンドルパサー
+  {
+    id: '111',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '169',
+    period: 'junior'
+  },
+  {
+    id: '112',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '91',
+    period: 'classic'
+  },
+  {
+    id: '113',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '7',
+    period: 'classic'
+  },
+  {
+    id: '114',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '10',
+    period: 'classic'
+  },
+  {
+    id: '115',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '62',
+    period: 'classic'
+  },
+  {
+    id: '116',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '12',
+    period: 'senior'
+  },
+  {
+    id: '117',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '19',
+    period: 'senior'
+  },
+  {
+    id: '118',
+    umamusume_name: 'エルコンドルパサー',
+    race_id: '23',
+    period: 'senior'
+  },
 )
