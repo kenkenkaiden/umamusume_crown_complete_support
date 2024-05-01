@@ -2,7 +2,7 @@ class RacesController < ApplicationController
 
   skip_before_action :verify_authenticity_token
   
-  def create
+  def create # 未勝利のレースを勝利済みに変更する処理
     @umamusume = Umamusume.find(params[:umamusume_id])
     @race = Race.find(params[:race_id])
 
@@ -19,7 +19,7 @@ class RacesController < ApplicationController
     redirect_to umamusume_path(@umamusume)
   end
 
-  def destroy
+  def destroy # 勝利済みのレースを未勝利に変更する処理
     umamusume = Umamusume.find(params[:umamusume_id])
     race = Race.find(params[:id])
     record = RecordOfWin.find_by(umamusume: umamusume, race: race)

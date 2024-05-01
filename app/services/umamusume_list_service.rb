@@ -97,7 +97,7 @@ class UmamusumeListService
       { name: 'ホッコータルマエ', turf: 'G', dirt: 'A', sprint: 'F', mile: 'A', intermediate: 'A', long: 'E' },
       { name: 'ワンダーアキュート', turf: 'G', dirt: 'A', sprint: 'D', mile: 'A', intermediate: 'A', long: 'E' },
       # { name: 'サムソンビッグ', turf: 'F', dirt: 'A', sprint: 'C', mile: 'A', intermediate: 'A', long: 'G' },
-      # { name: 'サウンズオブアース', turf: 'F', dirt: 'A', sprint: 'C', mile: 'A', intermediate: 'A', long: 'G' },
+      { name: 'サウンズオブアース', turf: 'A', dirt: 'G', sprint: 'G', mile: 'F', intermediate: 'A', long: 'A' },
       { name: 'カツラギエース', turf: 'A', dirt: 'G', sprint: 'E', mile: 'B', intermediate: 'A', long: 'B' },
       { name: 'ネオユニヴァース', turf: 'A', dirt: 'G', sprint: 'F', mile: 'B', intermediate: 'A', long: 'B' },
       { name: 'ヒシミラクル', turf: 'A', dirt: 'G', sprint: 'G', mile: 'G', intermediate: 'A', long: 'A' },
