@@ -226,3 +226,15 @@ Race.seed do |s|
   s.course = '函館'
   s.default_order = 316
 end
+
+Race.seed do |s|
+  s.id    = 172
+  s.name = 'メイクデビュー(シンボリルドルフ)'
+  s.grade = 'OP'
+  s.surface = '芝'
+  s.classification = '中距離'
+  s.distance = '2000'
+  s.date_junior = '6月'
+  s.course = '新潟'
+  s.default_order = 317
+end

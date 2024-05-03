@@ -851,4 +851,60 @@ TargetRace.seed(
       race_id: '23',
       period: 'senior'
     },
+
+    # シンボリルドルフ
+    {
+      id: '139',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '172',
+      period: 'junior'
+    },
+    {
+      id: '140',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '136',
+      period: 'junior'
+    },
+    {
+      id: '141',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '5',
+      period: 'classic'
+    },
+    {
+      id: '142',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '10',
+      period: 'classic'
+    },
+    {
+      id: '143',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '15',
+      period: 'classic'
+    },
+    {
+      id: '144',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '23',
+      period: 'classic'
+    },
+    {
+      id: '145',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '6',
+      period: 'senior'
+    },
+    {
+      id: '146',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '19',
+      period: 'senior'
+    },
+    {
+      id: '147',
+      umamusume_name: 'シンボリルドルフ',
+      race_id: '23',
+      period: 'senior'
+    },
 )
